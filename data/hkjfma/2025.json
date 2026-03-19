@@ -1,0 +1,1392 @@
+{
+  "questions": [
+    {
+      "id": "fb_0161",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_1",
+      "birth_info": {
+        "raw": "坤造 廣東出生 西曆:1951 年11月 14日巳時",
+        "gender": "女",
+        "location": "廣東",
+        "year": 1951,
+        "month": 11,
+        "day": 14,
+        "calendar_type": "solar",
+        "hour": 10,
+        "minute": 0
+      },
+      "question": "此命出生家境如何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "富裕"
+        },
+        {
+          "letter": "B",
+          "text": "貧窮"
+        },
+        {
+          "letter": "C",
+          "text": "父從商母是村幹部"
+        },
+        {
+          "letter": "D",
+          "text": "父母當官"
+        }
+      ],
+      "answer": "B",
+      "category": "家庭",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0162",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_1",
+      "birth_info": {
+        "raw": "坤造 廣東出生 西曆:1951 年11月 14日巳時",
+        "gender": "女",
+        "location": "廣東",
+        "year": 1951,
+        "month": 11,
+        "day": 14,
+        "calendar_type": "solar",
+        "hour": 10,
+        "minute": 0
+      },
+      "question": "婚姻如何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "一婚"
+        },
+        {
+          "letter": "B",
+          "text": "二婚"
+        },
+        {
+          "letter": "C",
+          "text": "一生未嫁"
+        },
+        {
+          "letter": "D",
+          "text": "夫早亡"
+        }
+      ],
+      "answer": "D",
+      "category": "婚姻",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0163",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_1",
+      "birth_info": {
+        "raw": "坤造 廣東出生 西曆:1951 年11月 14日巳時",
+        "gender": "女",
+        "location": "廣東",
+        "year": 1951,
+        "month": 11,
+        "day": 14,
+        "calendar_type": "solar",
+        "hour": 10,
+        "minute": 0
+      },
+      "question": "此人年青時何種工作?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "父母有錢，不用工作"
+        },
+        {
+          "letter": "B",
+          "text": "家貧，十多歲賣藝為生"
+        },
+        {
+          "letter": "C",
+          "text": "父母幫助，自己創業"
+        },
+        {
+          "letter": "D",
+          "text": "生活困難做舞女"
+        }
+      ],
+      "answer": "B",
+      "category": "事业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0164",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_1",
+      "birth_info": {
+        "raw": "坤造 廣東出生 西曆:1951 年11月 14日巳時",
+        "gender": "女",
+        "location": "廣東",
+        "year": 1951,
+        "month": 11,
+        "day": 14,
+        "calendar_type": "solar",
+        "hour": 10,
+        "minute": 0
+      },
+      "question": "1980 年發生何事?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "結婚"
+        },
+        {
+          "letter": "B",
+          "text": "交通意外"
+        },
+        {
+          "letter": "C",
+          "text": "被人打劫受傷"
+        },
+        {
+          "letter": "D",
+          "text": "得到意外偏財"
+        }
+      ],
+      "answer": "A",
+      "category": "运势",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0165",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_1",
+      "birth_info": {
+        "raw": "坤造 廣東出生 西曆:1951 年11月 14日巳時",
+        "gender": "女",
+        "location": "廣東",
+        "year": 1951,
+        "month": 11,
+        "day": 14,
+        "calendar_type": "solar",
+        "hour": 10,
+        "minute": 0
+      },
+      "question": "1993 年發生何事?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "貴人相扶得財"
+        },
+        {
+          "letter": "B",
+          "text": "丈夫病亡"
+        },
+        {
+          "letter": "C",
+          "text": "交通意外入院手術"
+        },
+        {
+          "letter": "D",
+          "text": "父親病亡"
+        }
+      ],
+      "answer": "B",
+      "category": "运势",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0166",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_2",
+      "birth_info": {
+        "raw": "女命 西曆 1987-07-05 午時 香港出生",
+        "gender": "女",
+        "location": "香港",
+        "year": 1987,
+        "month": 7,
+        "day": 5,
+        "calendar_type": "solar",
+        "hour": 12,
+        "minute": 0
+      },
+      "question": "2022 年至現在，命主的健康狀况如何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "健康少病痛，但有皮膚敏感問题，需戒吃海鮮"
+        },
+        {
+          "letter": "B",
+          "text": "這数年間，做過大型手術，曾有生命危險"
+        },
+        {
+          "letter": "C",
+          "text": "體弱多病，而且患有糖尿病，病情反覆"
+        }
+      ],
+      "answer": "",
+      "category": "健康",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0167",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_2",
+      "birth_info": {
+        "raw": "女命 西曆 1987-07-05 午時 香港出生",
+        "gender": "女",
+        "location": "香港",
+        "year": 1987,
+        "month": 7,
+        "day": 5,
+        "calendar_type": "solar",
+        "hour": 12,
+        "minute": 0
+      },
+      "question": "命主的性格特質、學歷水平和現時職業情况如何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "平庸惰，大學畢業，普通受薪階層"
+        },
+        {
+          "letter": "B",
+          "text": "聰敏不讀書，中學畢業，兼職為主"
+        },
+        {
+          "letter": "C",
+          "text": "不聰敏但勤力，大學畢業，經營家族生意"
+        },
+        {
+          "letter": "D",
+          "text": "聰敏能讀書，碩士博士，企業的管理層"
+        }
+      ],
+      "answer": "B",
+      "category": "事业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0168",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_2",
+      "birth_info": {
+        "raw": "女命 西曆 1987-07-05 午時 香港出生",
+        "gender": "女",
+        "location": "香港",
+        "year": 1987,
+        "month": 7,
+        "day": 5,
+        "calendar_type": "solar",
+        "hour": 12,
+        "minute": 0
+      },
+      "question": "命主在 2018 至現在，財政狀熊和事業運勢怎樣?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "感情詐騙，積蓄至無，幸有固定工作,收入穩定，彌補损失"
+        },
+        {
+          "letter": "B",
+          "text": "名成利就，工作順利，個人能力得以發揮，得到眾人赏識"
+        },
+        {
+          "letter": "C",
+          "text": "自己當了老闆，生意額則一般，艱辛經營，尋求突破框架"
+        },
+        {
+          "letter": "D",
+          "text": "不停轉工，財來財去，與家人居住，而日常开支由伴侶負責"
+        }
+      ],
+      "answer": "D",
+      "category": "事业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0169",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_2",
+      "birth_info": {
+        "raw": "女命 西曆 1987-07-05 午時 香港出生",
+        "gender": "女",
+        "location": "香港",
+        "year": 1987,
+        "month": 7,
+        "day": 5,
+        "calendar_type": "solar",
+        "hour": 12,
+        "minute": 0
+      },
+      "question": "命主現時的婚姻狀况如何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "婚姻美滿，夫妻二人相敬如賓"
+        },
+        {
+          "letter": "B",
+          "text": "已婚，但常被配偶言語傷害、責備"
+        },
+        {
+          "letter": "C",
+          "text": "離婚後再婚，現時感情穩定"
+        },
+        {
+          "letter": "D",
+          "text": "同性戀者，得到伴侶愛護"
+        }
+      ],
+      "answer": "D",
+      "category": "婚姻",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0170",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_2",
+      "birth_info": {
+        "raw": "女命 西曆 1987-07-05 午時 香港出生",
+        "gender": "女",
+        "location": "香港",
+        "year": 1987,
+        "month": 7,
+        "day": 5,
+        "calendar_type": "solar",
+        "hour": 12,
+        "minute": 0
+      },
+      "question": "現時命主與父母的關係、家庭背景?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "家境富有，不愁衣食，跟母親感情好，相對父親關係較疏離"
+        },
+        {
+          "letter": "B",
+          "text": "家境曾經小康，父隨後生意失敗，父母與命主威情關係正常"
+        },
+        {
+          "letter": "C",
+          "text": "從少貧窮，母親去世，父親養育命主，並與命主感情關係好"
+        },
+        {
+          "letter": "D",
+          "text": "父母離婚，各自提供基本生活費予命主，並從少由外婆照顧"
+        }
+      ],
+      "answer": "B",
+      "category": "家庭",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0171",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_3",
+      "birth_info": {
+        "raw": "男命:西历1983年4月 21 日上午6-7时出生 日本宫崎县出生",
+        "gender": "男",
+        "location": "时",
+        "year": 1983,
+        "month": 4,
+        "day": 21,
+        "calendar_type": "solar",
+        "hour": 6,
+        "minute": 0
+      },
+      "question": "命主出身及家庭情况。",
+      "options": [
+        {
+          "letter": "A",
+          "text": "出生后次年,母亲去世。父亲为小型企业主，另娶后，又生一弟一妹。"
+        },
+        {
+          "letter": "B",
+          "text": "父亲为政府高级职员，2021 年去世。命主有一兄一姐。"
+        },
+        {
+          "letter": "C",
+          "text": "母亲为家庭主妇，父亲为小型企业主。命主有一弟。"
+        },
+        {
+          "letter": "D",
+          "text": "1986 年父亲去世，母亲继承父亲产业，守寡至今。命主有一姐一弟。"
+        }
+      ],
+      "answer": "B",
+      "category": "家庭",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0172",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_3",
+      "birth_info": {
+        "raw": "男命:西历1983年4月 21 日上午6-7时出生 日本宫崎县出生",
+        "gender": "男",
+        "location": "时",
+        "year": 1983,
+        "month": 4,
+        "day": 21,
+        "calendar_type": "solar",
+        "hour": 6,
+        "minute": 0
+      },
+      "question": "命主的样貌、性情、爱好及职业。",
+      "options": [
+        {
+          "letter": "A",
+          "text": "腿脚残疾脾气古怪，喜好文艺爵士和古典音乐，现为萨克斯手和乐团老板"
+        },
+        {
+          "letter": "B",
+          "text": "身材高大魁梧，性情固执，喜好音乐，现为酒吧老板。"
+        },
+        {
+          "letter": "C",
+          "text": "中等身材，勤奋、叛逆，喜好拳击、橄榄球等运动，现为餐厅老板"
+        },
+        {
+          "letter": "D",
+          "text": "早产，自幼身体不好，喜好园艺，现为小型地产经纪公司老板。"
+        }
+      ],
+      "answer": "B",
+      "category": "事业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0173",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_3",
+      "birth_info": {
+        "raw": "男命:西历1983年4月 21 日上午6-7时出生 日本宫崎县出生",
+        "gender": "男",
+        "location": "时",
+        "year": 1983,
+        "month": 4,
+        "day": 21,
+        "calendar_type": "solar",
+        "hour": 6,
+        "minute": 0
+      },
+      "question": "命主的学历和职业状况。",
+      "options": [
+        {
+          "letter": "A",
+          "text": "重点大学医学类专业，毕业后转行，2013 年从事现在工作。"
+        },
+        {
+          "letter": "B",
+          "text": "重点大学文科毕业，2011 年进入现工作，2019年曾经因事判监半年。"
+        },
+        {
+          "letter": "C",
+          "text": "高中毕业，边打工边学习，2014年得贵人提携，进入现在工作。"
+        },
+        {
+          "letter": "D",
+          "text": "重点大学文科专业，中途退学，2021 年进入现在工作。"
+        }
+      ],
+      "answer": "D",
+      "category": "事业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0176",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_4",
+      "birth_info": {
+        "raw": "男命:西元1993年4月8日23:34(子時)出生新加坡",
+        "gender": "男",
+        "hour": 0,
+        "minute": 0
+      },
+      "question": "命主儿时家庭情况?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "父亲出轨，母亲照顾生活"
+        },
+        {
+          "letter": "B",
+          "text": "父母外出工作，外婆抚养"
+        },
+        {
+          "letter": "C",
+          "text": "父亲工作聚少离多，母亲患病"
+        },
+        {
+          "letter": "D",
+          "text": "父母离异，跟随母亲改嫁外国"
+        }
+      ],
+      "answer": "C",
+      "category": "家庭",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0177",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_4",
+      "birth_info": {
+        "raw": "男命:西元1993年4月8日23:34(子時)出生新加坡",
+        "gender": "男",
+        "hour": 0,
+        "minute": 0
+      },
+      "question": "命主 2001 年发生何事?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "遇校园霸凌，申请休学"
+        },
+        {
+          "letter": "B",
+          "text": "参与小语种演讲比赛获奖"
+        },
+        {
+          "letter": "C",
+          "text": "受伤后发现遗传病，用药治疗"
+        },
+        {
+          "letter": "D",
+          "text": "交通意外，人平安"
+        }
+      ],
+      "answer": "D",
+      "category": "运势",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0178",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_4",
+      "birth_info": {
+        "raw": "男命:西元1993年4月8日23:34(子時)出生新加坡",
+        "gender": "男",
+        "hour": 0,
+        "minute": 0
+      },
+      "question": "命主2022年后的职业行业情况?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "牧师"
+        },
+        {
+          "letter": "B",
+          "text": "入殓师"
+        },
+        {
+          "letter": "C",
+          "text": "航运物流管理"
+        },
+        {
+          "letter": "D",
+          "text": "传媒业网红"
+        }
+      ],
+      "answer": "B",
+      "category": "事业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0179",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_4",
+      "birth_info": {
+        "raw": "男命:西元1993年4月8日23:34(子時)出生新加坡",
+        "gender": "男",
+        "hour": 0,
+        "minute": 0
+      },
+      "question": "命主感情状况为何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "未婚，单身，恋情多短暂"
+        },
+        {
+          "letter": "B",
+          "text": "未婚，有女友交往多年，脚踏两条船"
+        },
+        {
+          "letter": "C",
+          "text": "已婚，感情稳定"
+        },
+        {
+          "letter": "D",
+          "text": "已婚，矛盾不断，离婚手续中"
+        }
+      ],
+      "answer": "A",
+      "category": "婚姻",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0180",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_4",
+      "birth_info": {
+        "raw": "男命:西元1993年4月8日23:34(子時)出生新加坡",
+        "gender": "男",
+        "hour": 0,
+        "minute": 0
+      },
+      "question": "命主抑郁症状最严重的年份?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2002"
+        },
+        {
+          "letter": "B",
+          "text": "2016"
+        },
+        {
+          "letter": "C",
+          "text": "2018"
+        },
+        {
+          "letter": "D",
+          "text": "2024"
+        }
+      ],
+      "answer": "B",
+      "category": "运势",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0181",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_5",
+      "birth_info": {
+        "raw": "乾造西历1988年1月10日 早上8时12分 马来西亚出生",
+        "gender": "男",
+        "location": "马来西亚",
+        "year": 1988,
+        "month": 1,
+        "day": 10,
+        "calendar_type": "solar"
+      },
+      "question": "命主目前的工作和生活情况如何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "在私人企业上班，超过十万存款，生活稳定"
+        },
+        {
+          "letter": "B",
+          "text": "自我经营做老板，有负债."
+        },
+        {
+          "letter": "C",
+          "text": "在普通公司里打工，月光族"
+        },
+        {
+          "letter": "D",
+          "text": "在私人企业做高管，收入稳定，自已有开店经营买卖"
+        }
+      ],
+      "answer": "D",
+      "category": "事业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0182",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_5",
+      "birth_info": {
+        "raw": "乾造西历1988年1月10日 早上8时12分 马来西亚出生",
+        "gender": "男",
+        "location": "马来西亚",
+        "year": 1988,
+        "month": 1,
+        "day": 10,
+        "calendar_type": "solar"
+      },
+      "question": "命主在 2004时发生了什么事?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "读书时期，被人举报与女生有亲密行为，被赶出学校。"
+        },
+        {
+          "letter": "B",
+          "text": "上学时发生车祸，伤了手脚。"
+        },
+        {
+          "letter": "C",
+          "text": "参加了学校制服团体举办行走比赛，队拿到第一名。"
+        },
+        {
+          "letter": "D",
+          "text": "离校，去摩多车店做学徒。"
+        }
+      ],
+      "answer": "A",
+      "category": "运势",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0183",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_5",
+      "birth_info": {
+        "raw": "乾造西历1988年1月10日 早上8时12分 马来西亚出生",
+        "gender": "男",
+        "location": "马来西亚",
+        "year": 1988,
+        "month": 1,
+        "day": 10,
+        "calendar_type": "solar"
+      },
+      "question": "命主在那一年结婚?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2021"
+        },
+        {
+          "letter": "B",
+          "text": "2017"
+        },
+        {
+          "letter": "C",
+          "text": "2022"
+        },
+        {
+          "letter": "D",
+          "text": "2016"
+        }
+      ],
+      "answer": "D",
+      "category": "婚姻",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0184",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_5",
+      "birth_info": {
+        "raw": "乾造西历1988年1月10日 早上8时12分 马来西亚出生",
+        "gender": "男",
+        "location": "马来西亚",
+        "year": 1988,
+        "month": 1,
+        "day": 10,
+        "calendar_type": "solar"
+      },
+      "question": "命主现在的婚姻状况，子女状况如何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "已婚，育有3孩子，流产2个"
+        },
+        {
+          "letter": "B",
+          "text": "离婚，育有2个孩子，流产1个"
+        },
+        {
+          "letter": "C",
+          "text": "二婚，育有1孩子"
+        },
+        {
+          "letter": "D",
+          "text": "已婚，没子嗣"
+        }
+      ],
+      "answer": "A",
+      "category": "婚姻",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0186",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_6",
+      "birth_info": {
+        "raw": "男命 西历:1973年 08月 24 日 00:35(子时)马来西亚出生",
+        "gender": "男",
+        "location": "马来西亚",
+        "year": 1973,
+        "month": 8,
+        "day": 24,
+        "calendar_type": "solar",
+        "hour": 0,
+        "minute": 0
+      },
+      "question": "命主的性格和出生如何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "足智多谋，为人仗义，但比较固执，出生在有钱家庭"
+        },
+        {
+          "letter": "B",
+          "text": "脾气暴躁，冲动，容易得罪人，出生在贫穷家庭"
+        },
+        {
+          "letter": "C",
+          "text": "外表温柔，文质彬彬，容易让人误会是娘娘腔，出生在中等家庭"
+        },
+        {
+          "letter": "D",
+          "text": "为人懒惰，不思进取，只顾享乐，出生在富有家庭"
+        }
+      ],
+      "answer": "A",
+      "category": "性格",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0187",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_6",
+      "birth_info": {
+        "raw": "男命 西历:1973年 08月 24 日 00:35(子时)马来西亚出生",
+        "gender": "男",
+        "location": "马来西亚",
+        "year": 1973,
+        "month": 8,
+        "day": 24,
+        "calendar_type": "solar",
+        "hour": 0,
+        "minute": 0
+      },
+      "question": "命主喜欢的居家装修风格是?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "炫酷风格，充满高科技设备"
+        },
+        {
+          "letter": "B",
+          "text": "欧式风格，高贵典雅，喜欢收藏古灵精怪摆设品"
+        },
+        {
+          "letter": "C",
+          "text": "中式风格，复古，喜欢古董和摆设风水物品。"
+        },
+        {
+          "letter": "D",
+          "text": "环保极简风格，不喜太多摆设"
+        }
+      ],
+      "answer": "B",
+      "category": "家庭",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0188",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_6",
+      "birth_info": {
+        "raw": "男命 西历:1973年 08月 24 日 00:35(子时)马来西亚出生",
+        "gender": "男",
+        "location": "马来西亚",
+        "year": 1973,
+        "month": 8,
+        "day": 24,
+        "calendar_type": "solar",
+        "hour": 0,
+        "minute": 0
+      },
+      "question": "在丙辰大限(43-52)，命主在哪一年出国创业?和什么领域相关?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "2015，关于饮食领域"
+        },
+        {
+          "letter": "B",
+          "text": "2017，关于儿童培训领域"
+        },
+        {
+          "letter": "C",
+          "text": "2018，关于房地产领域"
+        },
+        {
+          "letter": "D",
+          "text": "2019，关于酒店住宿领域"
+        }
+      ],
+      "answer": "B",
+      "category": "运势",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0189",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_6",
+      "birth_info": {
+        "raw": "男命 西历:1973年 08月 24 日 00:35(子时)马来西亚出生",
+        "gender": "男",
+        "location": "马来西亚",
+        "year": 1973,
+        "month": 8,
+        "day": 24,
+        "calendar_type": "solar",
+        "hour": 0,
+        "minute": 0
+      },
+      "question": "命主在 2021 年，发生何事?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "疫情过后生意不佳，不够资金周转，生意倒闭"
+        },
+        {
+          "letter": "B",
+          "text": "回家途中遇到歹徒，不幸被刺伤"
+        },
+        {
+          "letter": "C",
+          "text": "母亲不幸染病疫去世"
+        },
+        {
+          "letter": "D",
+          "text": "疫情过后生意情况峰回路转，蒸蒸日上"
+        }
+      ],
+      "answer": "D",
+      "category": "运势",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0190",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_6",
+      "birth_info": {
+        "raw": "男命 西历:1973年 08月 24 日 00:35(子时)马来西亚出生",
+        "gender": "男",
+        "location": "马来西亚",
+        "year": 1973,
+        "month": 8,
+        "day": 24,
+        "calendar_type": "solar",
+        "hour": 0,
+        "minute": 0
+      },
+      "question": "命主在 2024 年的健康状况如何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "健康无碍，只是饮食没控制，过于肥胖"
+        },
+        {
+          "letter": "B",
+          "text": "由于长时间久坐，导致脊椎骨侧弯"
+        },
+        {
+          "letter": "C",
+          "text": "经常无节制吸烟，引发鼻癌"
+        },
+        {
+          "letter": "D",
+          "text": "不幸被车撞倒，左脚骨折"
+        }
+      ],
+      "answer": "C",
+      "category": "健康",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0191",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_7",
+      "birth_info": {
+        "raw": "女命 :西曆:1988年2月15日 16:50 申時 台湾出生",
+        "gender": "女",
+        "location": "台湾",
+        "year": 1988,
+        "month": 2,
+        "day": 15,
+        "calendar_type": "solar",
+        "hour": 16,
+        "minute": 0
+      },
+      "question": "命主原生家庭父母親狀况?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "婚姻美滿、家庭和諧"
+        },
+        {
+          "letter": "B",
+          "text": "婚姻健在、吵鬧不休"
+        },
+        {
+          "letter": "C",
+          "text": "離異，跟隨父親"
+        },
+        {
+          "letter": "D",
+          "text": "離異，跟隨母親"
+        }
+      ],
+      "answer": "A",
+      "category": "家庭",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0192",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_7",
+      "birth_info": {
+        "raw": "女命 :西曆:1988年2月15日 16:50 申時 台湾出生",
+        "gender": "女",
+        "location": "台湾",
+        "year": 1988,
+        "month": 2,
+        "day": 15,
+        "calendar_type": "solar",
+        "hour": 16,
+        "minute": 0
+      },
+      "question": "命主大學時期讀什麼科系 ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "音樂"
+        },
+        {
+          "letter": "B",
+          "text": "金融"
+        },
+        {
+          "letter": "C",
+          "text": "美術"
+        },
+        {
+          "letter": "D",
+          "text": "理工"
+        }
+      ],
+      "answer": "C",
+      "category": "学业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0193",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_7",
+      "birth_info": {
+        "raw": "女命 :西曆:1988年2月15日 16:50 申時 台湾出生",
+        "gender": "女",
+        "location": "台湾",
+        "year": 1988,
+        "month": 2,
+        "day": 15,
+        "calendar_type": "solar",
+        "hour": 16,
+        "minute": 0
+      },
+      "question": "命主目前的婚姻狀熊?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "未婚單身"
+        },
+        {
+          "letter": "B",
+          "text": "已婚育有子女"
+        },
+        {
+          "letter": "C",
+          "text": "已婚育無子女"
+        },
+        {
+          "letter": "D",
+          "text": "離婚育有子女"
+        }
+      ],
+      "answer": "B",
+      "category": "婚姻",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0194",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_7",
+      "birth_info": {
+        "raw": "女命 :西曆:1988年2月15日 16:50 申時 台湾出生",
+        "gender": "女",
+        "location": "台湾",
+        "year": 1988,
+        "month": 2,
+        "day": 15,
+        "calendar_type": "solar",
+        "hour": 16,
+        "minute": 0
+      },
+      "question": "命主現職行業?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "身心靈導師"
+        },
+        {
+          "letter": "B",
+          "text": "行政會計"
+        },
+        {
+          "letter": "C",
+          "text": "美術設計"
+        },
+        {
+          "letter": "D",
+          "text": "健身教練"
+        }
+      ],
+      "answer": "D",
+      "category": "运势",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0195",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_7",
+      "birth_info": {
+        "raw": "女命 :西曆:1988年2月15日 16:50 申時 台湾出生",
+        "gender": "女",
+        "location": "台湾",
+        "year": 1988,
+        "month": 2,
+        "day": 15,
+        "calendar_type": "solar",
+        "hour": 16,
+        "minute": 0
+      },
+      "question": "對命主之描述?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "身材嬌小"
+        },
+        {
+          "letter": "B",
+          "text": "身材健壯"
+        },
+        {
+          "letter": "C",
+          "text": "身材矮胖"
+        },
+        {
+          "letter": "D",
+          "text": "身材瘦長"
+        }
+      ],
+      "answer": "B",
+      "category": "运势",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0196",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_8",
+      "birth_info": {
+        "raw": "男命:西元 1970年7月22日 申時 北京出生",
+        "gender": "男",
+        "location": "北京",
+        "hour": 16,
+        "minute": 0
+      },
+      "question": "命主學歷狀况為何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "文盲"
+        },
+        {
+          "letter": "B",
+          "text": "小學畢業"
+        },
+        {
+          "letter": "C",
+          "text": "高中或専科畢業"
+        },
+        {
+          "letter": "D",
+          "text": "博士"
+        }
+      ],
+      "answer": "C",
+      "category": "学业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0197",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_8",
+      "birth_info": {
+        "raw": "男命:西元 1970年7月22日 申時 北京出生",
+        "gender": "男",
+        "location": "北京",
+        "hour": 16,
+        "minute": 0
+      },
+      "question": "命主出社會後的工作 ?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "进入工廠，韩入國企"
+        },
+        {
+          "letter": "B",
+          "text": "进入學校，擔任老師"
+        },
+        {
+          "letter": "C",
+          "text": "进入企業，擔任大企業高管"
+        },
+        {
+          "letter": "D",
+          "text": "做小生意，變成企業家"
+        }
+      ],
+      "answer": "A",
+      "category": "事业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0198",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_8",
+      "birth_info": {
+        "raw": "男命:西元 1970年7月22日 申時 北京出生",
+        "gender": "男",
+        "location": "北京",
+        "hour": 16,
+        "minute": 0
+      },
+      "question": "命主早年一直在北京生活，直到哪個歲運有搬遷大變動，從北京去廈門工作?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "27-31 歲"
+        },
+        {
+          "letter": "B",
+          "text": "32-36 歲"
+        },
+        {
+          "letter": "C",
+          "text": "37-41 歲"
+        },
+        {
+          "letter": "D",
+          "text": "42-46 歲"
+        }
+      ],
+      "answer": "D",
+      "category": "事业",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0199",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_8",
+      "birth_info": {
+        "raw": "男命:西元 1970年7月22日 申時 北京出生",
+        "gender": "男",
+        "location": "北京",
+        "hour": 16,
+        "minute": 0
+      },
+      "question": "命主身體狀沉為何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "從小患有暗疾，影響終身"
+        },
+        {
+          "letter": "B",
+          "text": "長期失眠，精神不濟"
+        },
+        {
+          "letter": "C",
+          "text": "長年運動，身體素質好"
+        },
+        {
+          "letter": "D",
+          "text": "身體素質好，但遭遇重大意外導致殘缺"
+        }
+      ],
+      "answer": "C",
+      "category": "健康",
+      "difficulty": "medium",
+      "year": 2025
+    },
+    {
+      "id": "fb_0200",
+      "source": "hkjfma_2025",
+      "case_id": "case_2025_8",
+      "birth_info": {
+        "raw": "男命:西元 1970年7月22日 申時 北京出生",
+        "gender": "男",
+        "location": "北京",
+        "hour": 16,
+        "minute": 0
+      },
+      "question": "命主一生整體外界評價的性格如何?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "重義氣有原則，對外應對得體，出入近貴多受朋友長官晚輩尊敬喜爱"
+        },
+        {
+          "letter": "B",
+          "text": "喜歡獨處少交際少朋友，重視家庭和金錢，但家庭穩定傳統"
+        },
+        {
+          "letter": "C",
+          "text": "一生放蕩不羈朋友桃花多，喜歡高談闊論廣交五湖四海朋友其評價褒貶不一"
+        },
+        {
+          "letter": "D",
+          "text": "脾氣暴躁，情緒不穩定，家人朋友無法溝通"
+        }
+      ],
+      "answer": "A",
+      "category": "性格",
+      "difficulty": "medium",
+      "year": 2025
+    }
+  ],
+  "source": "hkjfma_2025",
+  "count": 37
+}

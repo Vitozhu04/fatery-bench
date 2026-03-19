@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FateryBench — Chinese Metaphysics LLM Benchmark</title>
+  <meta name="description" content="The most comprehensive Chinese metaphysics (命理) prediction benchmark for LLMs. 272+ questions, 6 models, 4 evaluation modes.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="container">
+    <h1>FateryBench</h1>
+    <p class="subtitle">
+      The most comprehensive Chinese metaphysics (命理) prediction benchmark for LLMs.
+      Can AI understand the Four Pillars of Destiny?
+    </p>
+    <div class="stats-row">
+      <div class="stat">
+        <div class="number" id="stat-questions">272</div>
+        <div class="label">Questions</div>
+      </div>
+      <div class="stat">
+        <div class="number">6</div>
+        <div class="label">Models</div>
+      </div>
+      <div class="stat">
+        <div class="number">4</div>
+        <div class="label">Eval Modes</div>
+      </div>
+      <div class="stat">
+        <div class="number">12</div>
+        <div class="label">Categories</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Leaderboard -->
+  <section id="leaderboard">
+    <h2 class="section-title">Leaderboard</h2>
+
+    <div class="mode-tabs" id="modeTabs">
+      <button class="mode-tab active" data-mode="fatery">Fatery-Enhanced</button>
+      <button class="mode-tab" data-mode="cot">Chain-of-Thought</button>
+      <button class="mode-tab" data-mode="astro">Astro-Enhanced</button>
+      <button class="mode-tab" data-mode="vanilla">Vanilla</button>
+    </div>
+
+    <table class="leaderboard-table" id="leaderboardTable">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Model</th>
+          <th>Provider</th>
+          <th class="sortable">Accuracy</th>
+          <th>Correct / Total</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboardBody">
+        <!-- Rendered by JS -->
+      </tbody>
+    </table>
+    <p style="margin-top: 12px; font-size: 0.85rem; color: var(--text-muted);">
+      Results are placeholder — run the benchmark to populate with real data.
+      Random baseline: 25% (4-option multiple choice).
+    </p>
+  </section>
+
+  <!-- Dataset Overview -->
+  <section id="dataset">
+    <h2 class="section-title">Dataset Overview</h2>
+
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3>Questions by Source</h3>
+        <div class="bar-chart" id="sourceChart">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+      <div class="chart-card">
+        <h3>Questions by Category</h3>
+        <div class="bar-chart" id="categoryChart">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evaluation Modes -->
+  <section id="modes">
+    <h2 class="section-title">Evaluation Modes</h2>
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3>1. Vanilla</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          Raw question with no guidance. Tests the model's innate metaphysics knowledge.
+        </p>
+      </div>
+      <div class="chart-card">
+        <h3>2. Chain-of-Thought (CoT)</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          Asks the model to reason step-by-step: chart casting, strength analysis, timing analysis, then answer.
+        </p>
+      </div>
+      <div class="chart-card">
+        <h3>3. Astro-Enhanced</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          Provides pre-computed birth chart data. Tests analysis ability when computation is offloaded.
+        </p>
+      </div>
+      <div class="chart-card">
+        <h3>4. Fatery-Enhanced</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          Professional prompt engineering + structured analysis framework.
+          Fatery's proprietary approach — demonstrates the value of domain-specific prompt design.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample Questions -->
+  <section id="samples">
+    <h2 class="section-title">Sample Questions</h2>
+    <div id="sampleQuestions">
+      <!-- Rendered by JS -->
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>
+      FateryBench by <a href="https://fatery.me" target="_blank">Fatery.me</a>
+      · Inspired by <a href="https://github.com/DestinyLinker/ftbench" target="_blank">ftbench</a>
+      · <a href="https://github.com/fatery/fatery-bench" target="_blank">GitHub</a>
+    </p>
+    <p style="margin-top: 8px;">
+      Data sourced from public HKJFMA competitions and verified public records.
+    </p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+(function() {
+  'use strict';
+
+  let currentMode = 'fatery';
+
+  // --- Leaderboard ---
+  function renderLeaderboard(mode) {
+    const tbody = document.getElementById('leaderboardBody');
+    const rows = BENCHMARK_DATA.results
+      .map(r => ({
+        ...r,
+        score: r.scores[mode] || { accuracy: 0, correct: 0, total: 272 },
+      }))
+      .sort((a, b) => b.score.accuracy - a.score.accuracy);
+
+    tbody.innerHTML = rows.map((r, i) => {
+      const rank = i + 1;
+      const rankClass = rank <= 3 ? `rank-${rank}` : '';
+      const acc = r.score.accuracy;
+      const accStr = acc > 0 ? `${(acc * 100).toFixed(1)}%` : '—';
+      const barWidth = Math.max(acc * 200, 0);
+      const badge = r.isFateryDefault ? '<span class="fatery-badge">Fatery Default</span>' : '';
+
+      return `<tr>
+        <td class="rank ${rankClass}">${rank}</td>
+        <td>
+          <span class="model-name">${r.model}</span>${badge}
+        </td>
+        <td class="model-provider">${r.provider}</td>
+        <td class="accuracy-cell">
+          ${acc > 0 ? accStr : '<span class="no-data">Pending</span>'}
+          ${acc > 0 ? `<span class="accuracy-bar" style="width:${barWidth}px"></span>` : ''}
+        </td>
+        <td>${acc > 0 ? `${r.score.correct} / ${r.score.total}` : '—'}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  // Mode tabs
+  document.getElementById('modeTabs').addEventListener('click', (e) => {
+    if (!e.target.classList.contains('mode-tab')) return;
+    document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+    e.target.classList.add('active');
+    currentMode = e.target.dataset.mode;
+    renderLeaderboard(currentMode);
+  });
+
+  // --- Charts ---
+  function renderBarChart(containerId, data, maxVal) {
+    const container = document.getElementById(containerId);
+    if (!maxVal) maxVal = Math.max(...Object.values(data));
+
+    container.innerHTML = Object.entries(data).map(([label, count]) => {
+      const pct = (count / maxVal * 100).toFixed(0);
+      return `<div class="bar-item">
+        <span class="bar-label">${label}</span>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:${pct}%">${count}</div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  // --- Sample Questions ---
+  function renderSamples() {
+    const container = document.getElementById('sampleQuestions');
+    container.innerHTML = BENCHMARK_DATA.sampleQuestions.map(q => {
+      return `<div class="sample-question">
+        <div class="meta">
+          <span class="tag">${q.source}</span>
+          <span class="tag">${q.category}</span>
+          <span class="tag">${q.id}</span>
+        </div>
+        <div class="birth-info">${q.birth}</div>
+        <div class="q-text">${q.question}</div>
+        <ul class="options">
+          ${q.options.map(opt => {
+            const letter = opt.charAt(0);
+            const isCorrect = letter === q.answer;
+            return `<li class="${isCorrect ? 'correct' : ''}">${opt}${isCorrect ? ' ✓' : ''}</li>`;
+          }).join('')}
+        </ul>
+      </div>`;
+    }).join('');
+  }
+
+  // --- Init ---
+  renderLeaderboard(currentMode);
+  renderBarChart('sourceChart', BENCHMARK_DATA.dataset.sources);
+  renderBarChart('categoryChart', BENCHMARK_DATA.dataset.categories);
+  renderSamples();
+})();
+</script>
+
+</body>
+</html>

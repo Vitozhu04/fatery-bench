@@ -1,0 +1,1620 @@
+{
+  "questions": [
+    {
+      "id": "fb_c001",
+      "source": "celebrity",
+      "case_id": "celebrity_1",
+      "birth_info": {
+        "raw": "男命：1963年2月17日 出生地点：台湾台南",
+        "gender": "男",
+        "year": 1963,
+        "month": 2,
+        "day": 17,
+        "hour": 8,
+        "minute": 0,
+        "location": "台湾台南",
+        "calendar_type": "solar"
+      },
+      "question": "此人30岁左右（1993年前后）最可能发生什么事？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "创办科技公司，成为CEO"
+        },
+        {
+          "letter": "B",
+          "text": "移民美国，在大学任教"
+        },
+        {
+          "letter": "C",
+          "text": "家族企业破产，负债累累"
+        },
+        {
+          "letter": "D",
+          "text": "从政，当选地方议员"
+        }
+      ],
+      "answer": "A",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "黄仁勋 (Jensen Huang)"
+    },
+    {
+      "id": "fb_c002",
+      "source": "celebrity",
+      "case_id": "celebrity_1",
+      "birth_info": {
+        "raw": "男命：1963年2月17日 出生地点：台湾台南",
+        "gender": "男",
+        "year": 1963,
+        "month": 2,
+        "day": 17,
+        "hour": 8,
+        "minute": 0,
+        "location": "台湾台南",
+        "calendar_type": "solar"
+      },
+      "question": "此人的事业发展特点是什么？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "年少成名，中年转衰，晚年平淡"
+        },
+        {
+          "letter": "B",
+          "text": "大器晚成，50岁后才开始创业"
+        },
+        {
+          "letter": "C",
+          "text": "早年创业，中年稳步发展，60岁后迎来事业巅峰"
+        },
+        {
+          "letter": "D",
+          "text": "一生从事公务员，稳定但无大起色"
+        }
+      ],
+      "answer": "C",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "黄仁勋 (Jensen Huang)"
+    },
+    {
+      "id": "fb_c003",
+      "source": "celebrity",
+      "case_id": "celebrity_1",
+      "birth_info": {
+        "raw": "男命：1963年2月17日 出生地点：台湾台南",
+        "gender": "男",
+        "year": 1963,
+        "month": 2,
+        "day": 17,
+        "hour": 8,
+        "minute": 0,
+        "location": "台湾台南",
+        "calendar_type": "solar"
+      },
+      "question": "此人的财运特征最可能是？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "白手起家，积累巨额财富，成为超级富豪"
+        },
+        {
+          "letter": "B",
+          "text": "继承家族财产，守成为主"
+        },
+        {
+          "letter": "C",
+          "text": "财运平平，一生衣食无忧但无大富"
+        },
+        {
+          "letter": "D",
+          "text": "年轻时富裕，晚年财运衰败"
+        }
+      ],
+      "answer": "A",
+      "category": "财运",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "黄仁勋 (Jensen Huang)"
+    },
+    {
+      "id": "fb_c004",
+      "source": "celebrity",
+      "case_id": "celebrity_1",
+      "birth_info": {
+        "raw": "男命：1963年2月17日 出生地点：台湾台南",
+        "gender": "男",
+        "year": 1963,
+        "month": 2,
+        "day": 17,
+        "hour": 8,
+        "minute": 0,
+        "location": "台湾台南",
+        "calendar_type": "solar"
+      },
+      "question": "此人的婚姻状况最可能是？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "多次婚姻，感情波折"
+        },
+        {
+          "letter": "B",
+          "text": "早婚，婚姻稳定长久"
+        },
+        {
+          "letter": "C",
+          "text": "终身未婚"
+        },
+        {
+          "letter": "D",
+          "text": "中年离婚，晚年再婚"
+        }
+      ],
+      "answer": "B",
+      "category": "婚姻",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "黄仁勋 (Jensen Huang)"
+    },
+    {
+      "id": "fb_c005",
+      "source": "celebrity",
+      "case_id": "celebrity_2",
+      "birth_info": {
+        "raw": "男命：1964年9月10日 出生地点：浙江杭州",
+        "gender": "男",
+        "year": 1964,
+        "month": 9,
+        "day": 10,
+        "hour": 8,
+        "minute": 0,
+        "location": "浙江杭州",
+        "calendar_type": "solar"
+      },
+      "question": "此人年轻时（18-25岁）的求学经历最可能是？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "学业顺利，名校毕业"
+        },
+        {
+          "letter": "B",
+          "text": "高考多次失败，最终考上普通院校"
+        },
+        {
+          "letter": "C",
+          "text": "未上大学，直接经商"
+        },
+        {
+          "letter": "D",
+          "text": "出国留学，海归精英"
+        }
+      ],
+      "answer": "B",
+      "category": "学业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "马云 (Jack Ma)"
+    },
+    {
+      "id": "fb_c006",
+      "source": "celebrity",
+      "case_id": "celebrity_2",
+      "birth_info": {
+        "raw": "男命：1964年9月10日 出生地点：浙江杭州",
+        "gender": "男",
+        "year": 1964,
+        "month": 9,
+        "day": 10,
+        "hour": 8,
+        "minute": 0,
+        "location": "浙江杭州",
+        "calendar_type": "solar"
+      },
+      "question": "此人35岁左右（1999年前后）最可能发生什么？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "创办互联网公司"
+        },
+        {
+          "letter": "B",
+          "text": "在国企担任高管"
+        },
+        {
+          "letter": "C",
+          "text": "移民海外"
+        },
+        {
+          "letter": "D",
+          "text": "经历严重健康问题"
+        }
+      ],
+      "answer": "A",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "马云 (Jack Ma)"
+    },
+    {
+      "id": "fb_c007",
+      "source": "celebrity",
+      "case_id": "celebrity_2",
+      "birth_info": {
+        "raw": "男命：1964年9月10日 出生地点：浙江杭州",
+        "gender": "男",
+        "year": 1964,
+        "month": 9,
+        "day": 10,
+        "hour": 8,
+        "minute": 0,
+        "location": "浙江杭州",
+        "calendar_type": "solar"
+      },
+      "question": "此人2020年前后的运势特征？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "事业达到新高峰，风光无限"
+        },
+        {
+          "letter": "B",
+          "text": "遭遇重大挫折，公开活动减少，处于低谷期"
+        },
+        {
+          "letter": "C",
+          "text": "退休安享晚年，平淡度日"
+        },
+        {
+          "letter": "D",
+          "text": "转行从政，进入政界"
+        }
+      ],
+      "answer": "B",
+      "category": "运势",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "马云 (Jack Ma)"
+    },
+    {
+      "id": "fb_c008",
+      "source": "celebrity",
+      "case_id": "celebrity_2",
+      "birth_info": {
+        "raw": "男命：1964年9月10日 出生地点：浙江杭州",
+        "gender": "男",
+        "year": 1964,
+        "month": 9,
+        "day": 10,
+        "hour": 8,
+        "minute": 0,
+        "location": "浙江杭州",
+        "calendar_type": "solar"
+      },
+      "question": "此人的性格特点最可能是？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "沉默寡言、谨慎内敛"
+        },
+        {
+          "letter": "B",
+          "text": "口才出众、性格张扬、富有感染力"
+        },
+        {
+          "letter": "C",
+          "text": "温和谦逊、不善言辞"
+        },
+        {
+          "letter": "D",
+          "text": "冷静理性、不苟言笑"
+        }
+      ],
+      "answer": "B",
+      "category": "性格",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "马云 (Jack Ma)"
+    },
+    {
+      "id": "fb_c009",
+      "source": "celebrity",
+      "case_id": "celebrity_3",
+      "birth_info": {
+        "raw": "男命：1955年2月24日 出生地点：美国旧金山",
+        "gender": "男",
+        "year": 1955,
+        "month": 2,
+        "day": 24,
+        "hour": 19,
+        "minute": 15,
+        "location": "美国旧金山",
+        "calendar_type": "solar"
+      },
+      "question": "此人出生后的家庭状况最可能是？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "出生即被收养，养父母为普通工薪阶层"
+        },
+        {
+          "letter": "B",
+          "text": "出身富裕家庭，父母均为企业家"
+        },
+        {
+          "letter": "C",
+          "text": "单亲家庭，由母亲独自抚养"
+        },
+        {
+          "letter": "D",
+          "text": "出身农村，家境贫困"
+        }
+      ],
+      "answer": "A",
+      "category": "家庭",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "乔布斯 (Steve Jobs)"
+    },
+    {
+      "id": "fb_c010",
+      "source": "celebrity",
+      "case_id": "celebrity_3",
+      "birth_info": {
+        "raw": "男命：1955年2月24日 出生地点：美国旧金山",
+        "gender": "男",
+        "year": 1955,
+        "month": 2,
+        "day": 24,
+        "hour": 19,
+        "minute": 15,
+        "location": "美国旧金山",
+        "calendar_type": "solar"
+      },
+      "question": "此人21岁（1976年前后）最可能做了什么？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "大学毕业进入大公司工作"
+        },
+        {
+          "letter": "B",
+          "text": "在车库创办电脑公司"
+        },
+        {
+          "letter": "C",
+          "text": "出国留学深造"
+        },
+        {
+          "letter": "D",
+          "text": "继承家族产业"
+        }
+      ],
+      "answer": "B",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "乔布斯 (Steve Jobs)"
+    },
+    {
+      "id": "fb_c011",
+      "source": "celebrity",
+      "case_id": "celebrity_3",
+      "birth_info": {
+        "raw": "男命：1955年2月24日 出生地点：美国旧金山",
+        "gender": "男",
+        "year": 1955,
+        "month": 2,
+        "day": 24,
+        "hour": 19,
+        "minute": 15,
+        "location": "美国旧金山",
+        "calendar_type": "solar"
+      },
+      "question": "此人30岁（1985年前后）的事业状况？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "事业蒸蒸日上，功成名就"
+        },
+        {
+          "letter": "B",
+          "text": "被自己创办的公司解雇"
+        },
+        {
+          "letter": "C",
+          "text": "公司上市，成为亿万富翁"
+        },
+        {
+          "letter": "D",
+          "text": "转行进入金融业"
+        }
+      ],
+      "answer": "B",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "乔布斯 (Steve Jobs)"
+    },
+    {
+      "id": "fb_c012",
+      "source": "celebrity",
+      "case_id": "celebrity_3",
+      "birth_info": {
+        "raw": "男命：1955年2月24日 出生地点：美国旧金山",
+        "gender": "男",
+        "year": 1955,
+        "month": 2,
+        "day": 24,
+        "hour": 19,
+        "minute": 15,
+        "location": "美国旧金山",
+        "calendar_type": "solar"
+      },
+      "question": "此人的健康状况和寿命？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "一生健康，长寿"
+        },
+        {
+          "letter": "B",
+          "text": "中年患癌症，56岁去世"
+        },
+        {
+          "letter": "C",
+          "text": "年轻时遭遇车祸，留下后遗症"
+        },
+        {
+          "letter": "D",
+          "text": "晚年中风，瘫痪在床"
+        }
+      ],
+      "answer": "B",
+      "category": "健康",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "乔布斯 (Steve Jobs)"
+    },
+    {
+      "id": "fb_c013",
+      "source": "celebrity",
+      "case_id": "celebrity_4",
+      "birth_info": {
+        "raw": "女命：1953年1月29日 出生地点：台湾云林",
+        "gender": "女",
+        "year": 1953,
+        "month": 1,
+        "day": 29,
+        "hour": 10,
+        "minute": 0,
+        "location": "台湾云林",
+        "calendar_type": "solar"
+      },
+      "question": "此人的事业领域最可能是？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "政界女强人"
+        },
+        {
+          "letter": "B",
+          "text": "演艺界歌手，红遍亚洲"
+        },
+        {
+          "letter": "C",
+          "text": "学术界教授"
+        },
+        {
+          "letter": "D",
+          "text": "商界女企业家"
+        }
+      ],
+      "answer": "B",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "邓丽君 (Teresa Teng)"
+    },
+    {
+      "id": "fb_c014",
+      "source": "celebrity",
+      "case_id": "celebrity_4",
+      "birth_info": {
+        "raw": "女命：1953年1月29日 出生地点：台湾云林",
+        "gender": "女",
+        "year": 1953,
+        "month": 1,
+        "day": 29,
+        "hour": 10,
+        "minute": 0,
+        "location": "台湾云林",
+        "calendar_type": "solar"
+      },
+      "question": "此人的婚姻状况？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "早婚幸福，儿女双全"
+        },
+        {
+          "letter": "B",
+          "text": "终身未婚，感情波折不断"
+        },
+        {
+          "letter": "C",
+          "text": "离婚后独身"
+        },
+        {
+          "letter": "D",
+          "text": "嫁入豪门，婚姻美满"
+        }
+      ],
+      "answer": "B",
+      "category": "婚姻",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "邓丽君 (Teresa Teng)"
+    },
+    {
+      "id": "fb_c015",
+      "source": "celebrity",
+      "case_id": "celebrity_4",
+      "birth_info": {
+        "raw": "女命：1953年1月29日 出生地点：台湾云林",
+        "gender": "女",
+        "year": 1953,
+        "month": 1,
+        "day": 29,
+        "hour": 10,
+        "minute": 0,
+        "location": "台湾云林",
+        "calendar_type": "solar"
+      },
+      "question": "此人的寿命和去世方式？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "长寿，自然老去"
+        },
+        {
+          "letter": "B",
+          "text": "42岁在异国突发疾病去世"
+        },
+        {
+          "letter": "C",
+          "text": "遭遇意外事故"
+        },
+        {
+          "letter": "D",
+          "text": "70岁后病逝"
+        }
+      ],
+      "answer": "B",
+      "category": "健康",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "邓丽君 (Teresa Teng)"
+    },
+    {
+      "id": "fb_c016",
+      "source": "celebrity",
+      "case_id": "celebrity_5",
+      "birth_info": {
+        "raw": "男命：1940年11月27日 出生地点：美国旧金山",
+        "gender": "男",
+        "year": 1940,
+        "month": 11,
+        "day": 27,
+        "hour": 7,
+        "minute": 12,
+        "location": "美国旧金山",
+        "calendar_type": "solar"
+      },
+      "question": "此人最可能从事什么职业？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "武术家和电影明星，享誉全球"
+        },
+        {
+          "letter": "B",
+          "text": "医生，在医学界有建树"
+        },
+        {
+          "letter": "C",
+          "text": "政治家，参与社会运动"
+        },
+        {
+          "letter": "D",
+          "text": "商人，经营连锁企业"
+        }
+      ],
+      "answer": "A",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "李小龙 (Bruce Lee)"
+    },
+    {
+      "id": "fb_c017",
+      "source": "celebrity",
+      "case_id": "celebrity_5",
+      "birth_info": {
+        "raw": "男命：1940年11月27日 出生地点：美国旧金山",
+        "gender": "男",
+        "year": 1940,
+        "month": 11,
+        "day": 27,
+        "hour": 7,
+        "minute": 12,
+        "location": "美国旧金山",
+        "calendar_type": "solar"
+      },
+      "question": "此人的寿命特征？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "长寿，活到80岁以上"
+        },
+        {
+          "letter": "B",
+          "text": "英年早逝，32岁突然去世"
+        },
+        {
+          "letter": "C",
+          "text": "中年遭遇重大疾病，60岁去世"
+        },
+        {
+          "letter": "D",
+          "text": "晚年生活安逸，75岁去世"
+        }
+      ],
+      "answer": "B",
+      "category": "健康",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "李小龙 (Bruce Lee)"
+    },
+    {
+      "id": "fb_c018",
+      "source": "celebrity",
+      "case_id": "celebrity_5",
+      "birth_info": {
+        "raw": "男命：1940年11月27日 出生地点：美国旧金山",
+        "gender": "男",
+        "year": 1940,
+        "month": 11,
+        "day": 27,
+        "hour": 7,
+        "minute": 12,
+        "location": "美国旧金山",
+        "calendar_type": "solar"
+      },
+      "question": "此人的子女运如何？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "子女众多，家庭幸福"
+        },
+        {
+          "letter": "B",
+          "text": "有一子一女，但儿子也英年早逝"
+        },
+        {
+          "letter": "C",
+          "text": "无子女"
+        },
+        {
+          "letter": "D",
+          "text": "子女平庸，无特殊成就"
+        }
+      ],
+      "answer": "B",
+      "category": "子女",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "李小龙 (Bruce Lee)"
+    },
+    {
+      "id": "fb_c019",
+      "source": "celebrity",
+      "case_id": "celebrity_6",
+      "birth_info": {
+        "raw": "男命：1971年6月28日 出生地点：南非比勒陀利亚",
+        "gender": "男",
+        "year": 1971,
+        "month": 6,
+        "day": 28,
+        "hour": 7,
+        "minute": 0,
+        "location": "南非比勒陀利亚",
+        "calendar_type": "solar"
+      },
+      "question": "此人的婚姻状况？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "一婚到底，婚姻美满"
+        },
+        {
+          "letter": "B",
+          "text": "多次结婚离婚，感情生活复杂"
+        },
+        {
+          "letter": "C",
+          "text": "终身未婚"
+        },
+        {
+          "letter": "D",
+          "text": "二婚后稳定"
+        }
+      ],
+      "answer": "B",
+      "category": "婚姻",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "马斯克 (Elon Musk)"
+    },
+    {
+      "id": "fb_c020",
+      "source": "celebrity",
+      "case_id": "celebrity_6",
+      "birth_info": {
+        "raw": "男命：1971年6月28日 出生地点：南非比勒陀利亚",
+        "gender": "男",
+        "year": 1971,
+        "month": 6,
+        "day": 28,
+        "hour": 7,
+        "minute": 0,
+        "location": "南非比勒陀利亚",
+        "calendar_type": "solar"
+      },
+      "question": "此人的性格特点？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "温和内敛，不善社交"
+        },
+        {
+          "letter": "B",
+          "text": "极度偏执、工作狂、敢于冒险、言行出格"
+        },
+        {
+          "letter": "C",
+          "text": "圆滑世故，善于人际关系"
+        },
+        {
+          "letter": "D",
+          "text": "保守谨慎，厌恶风险"
+        }
+      ],
+      "answer": "B",
+      "category": "性格",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "马斯克 (Elon Musk)"
+    },
+    {
+      "id": "fb_c021",
+      "source": "celebrity",
+      "case_id": "celebrity_6",
+      "birth_info": {
+        "raw": "男命：1971年6月28日 出生地点：南非比勒陀利亚",
+        "gender": "男",
+        "year": 1971,
+        "month": 6,
+        "day": 28,
+        "hour": 7,
+        "minute": 0,
+        "location": "南非比勒陀利亚",
+        "calendar_type": "solar"
+      },
+      "question": "此人2008年前后的运势？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "事业一帆风顺，大获成功"
+        },
+        {
+          "letter": "B",
+          "text": "公司濒临破产，婚姻破裂，人生最低谷"
+        },
+        {
+          "letter": "C",
+          "text": "退休享乐"
+        },
+        {
+          "letter": "D",
+          "text": "健康出现严重问题"
+        }
+      ],
+      "answer": "B",
+      "category": "运势",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "马斯克 (Elon Musk)"
+    },
+    {
+      "id": "fb_c022",
+      "source": "celebrity",
+      "case_id": "celebrity_6",
+      "birth_info": {
+        "raw": "男命：1971年6月28日 出生地点：南非比勒陀利亚",
+        "gender": "男",
+        "year": 1971,
+        "month": 6,
+        "day": 28,
+        "hour": 7,
+        "minute": 0,
+        "location": "南非比勒陀利亚",
+        "calendar_type": "solar"
+      },
+      "question": "此人的子女情况？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "无子女"
+        },
+        {
+          "letter": "B",
+          "text": "一儿一女"
+        },
+        {
+          "letter": "C",
+          "text": "子女众多（10个以上），来自不同伴侣"
+        },
+        {
+          "letter": "D",
+          "text": "三个子女，均已成年"
+        }
+      ],
+      "answer": "C",
+      "category": "子女",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "马斯克 (Elon Musk)"
+    },
+    {
+      "id": "fb_c023",
+      "source": "celebrity",
+      "case_id": "celebrity_7",
+      "birth_info": {
+        "raw": "男命：1979年1月18日 出生地点：台湾新北",
+        "gender": "男",
+        "year": 1979,
+        "month": 1,
+        "day": 18,
+        "hour": 12,
+        "minute": 0,
+        "location": "台湾新北",
+        "calendar_type": "solar"
+      },
+      "question": "此人的家庭背景？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "出身富裕家庭，父母经商"
+        },
+        {
+          "letter": "B",
+          "text": "父母离异，由母亲抚养长大"
+        },
+        {
+          "letter": "C",
+          "text": "出身音乐世家，从小接受专业训练"
+        },
+        {
+          "letter": "D",
+          "text": "父母均为公务员，家境小康"
+        }
+      ],
+      "answer": "B",
+      "category": "家庭",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "周杰伦 (Jay Chou)"
+    },
+    {
+      "id": "fb_c024",
+      "source": "celebrity",
+      "case_id": "celebrity_7",
+      "birth_info": {
+        "raw": "男命：1979年1月18日 出生地点：台湾新北",
+        "gender": "男",
+        "year": 1979,
+        "month": 1,
+        "day": 18,
+        "hour": 12,
+        "minute": 0,
+        "location": "台湾新北",
+        "calendar_type": "solar"
+      },
+      "question": "此人的事业特点？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "年少成名，20岁出头即成为华语乐坛天王"
+        },
+        {
+          "letter": "B",
+          "text": "大器晚成，40岁才开始受到关注"
+        },
+        {
+          "letter": "C",
+          "text": "从商成功，涉足多个产业"
+        },
+        {
+          "letter": "D",
+          "text": "体育明星，在运动界有建树"
+        }
+      ],
+      "answer": "A",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "周杰伦 (Jay Chou)"
+    },
+    {
+      "id": "fb_c025",
+      "source": "celebrity",
+      "case_id": "celebrity_7",
+      "birth_info": {
+        "raw": "男命：1979年1月18日 出生地点：台湾新北",
+        "gender": "男",
+        "year": 1979,
+        "month": 1,
+        "day": 18,
+        "hour": 12,
+        "minute": 0,
+        "location": "台湾新北",
+        "calendar_type": "solar"
+      },
+      "question": "此人的健康特点？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "一生健康，体魄强健"
+        },
+        {
+          "letter": "B",
+          "text": "患有强直性脊柱炎，长期忍受病痛"
+        },
+        {
+          "letter": "C",
+          "text": "中年心脏病发作"
+        },
+        {
+          "letter": "D",
+          "text": "先天视力障碍"
+        }
+      ],
+      "answer": "B",
+      "category": "健康",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "周杰伦 (Jay Chou)"
+    },
+    {
+      "id": "fb_c026",
+      "source": "celebrity",
+      "case_id": "celebrity_8",
+      "birth_info": {
+        "raw": "女命：1926年6月1日上午9:30 出生地点：美国洛杉矶",
+        "gender": "女",
+        "year": 1926,
+        "month": 6,
+        "day": 1,
+        "hour": 9,
+        "minute": 30,
+        "location": "美国洛杉矶",
+        "calendar_type": "solar"
+      },
+      "question": "此人的童年经历？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "幸福童年，父母疼爱"
+        },
+        {
+          "letter": "B",
+          "text": "在孤儿院和寄养家庭中长大，童年不幸"
+        },
+        {
+          "letter": "C",
+          "text": "出身贵族家庭，受良好教育"
+        },
+        {
+          "letter": "D",
+          "text": "父母早亡，由祖父母抚养"
+        }
+      ],
+      "answer": "B",
+      "category": "家庭",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "玛丽莲·梦露 (Marilyn Monroe)"
+    },
+    {
+      "id": "fb_c027",
+      "source": "celebrity",
+      "case_id": "celebrity_8",
+      "birth_info": {
+        "raw": "女命：1926年6月1日上午9:30 出生地点：美国洛杉矶",
+        "gender": "女",
+        "year": 1926,
+        "month": 6,
+        "day": 1,
+        "hour": 9,
+        "minute": 30,
+        "location": "美国洛杉矶",
+        "calendar_type": "solar"
+      },
+      "question": "此人的婚姻状况？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "一婚幸福，白头偕老"
+        },
+        {
+          "letter": "B",
+          "text": "三次婚姻，均以离婚收场"
+        },
+        {
+          "letter": "C",
+          "text": "终身未婚"
+        },
+        {
+          "letter": "D",
+          "text": "二婚后稳定"
+        }
+      ],
+      "answer": "B",
+      "category": "婚姻",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "玛丽莲·梦露 (Marilyn Monroe)"
+    },
+    {
+      "id": "fb_c028",
+      "source": "celebrity",
+      "case_id": "celebrity_8",
+      "birth_info": {
+        "raw": "女命：1926年6月1日上午9:30 出生地点：美国洛杉矶",
+        "gender": "女",
+        "year": 1926,
+        "month": 6,
+        "day": 1,
+        "hour": 9,
+        "minute": 30,
+        "location": "美国洛杉矶",
+        "calendar_type": "solar"
+      },
+      "question": "此人的生命结局？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "长寿安详去世"
+        },
+        {
+          "letter": "B",
+          "text": "36岁药物过量去世，死因存疑"
+        },
+        {
+          "letter": "C",
+          "text": "车祸去世"
+        },
+        {
+          "letter": "D",
+          "text": "50岁后隐退，平静度过余生"
+        }
+      ],
+      "answer": "B",
+      "category": "健康",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "玛丽莲·梦露 (Marilyn Monroe)"
+    },
+    {
+      "id": "fb_c029",
+      "source": "celebrity",
+      "case_id": "celebrity_9",
+      "birth_info": {
+        "raw": "男命：1904年8月22日 出生地点：四川广安",
+        "gender": "男",
+        "year": 1904,
+        "month": 8,
+        "day": 22,
+        "hour": 10,
+        "minute": 0,
+        "location": "四川广安",
+        "calendar_type": "solar"
+      },
+      "question": "此人一生中最显著的运势特征？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "一帆风顺，一生平稳"
+        },
+        {
+          "letter": "B",
+          "text": "三起三落，晚年达到权力巅峰"
+        },
+        {
+          "letter": "C",
+          "text": "早年得志，晚年落魄"
+        },
+        {
+          "letter": "D",
+          "text": "一生平庸，无大起大落"
+        }
+      ],
+      "answer": "B",
+      "category": "运势",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "邓小平 (Deng Xiaoping)"
+    },
+    {
+      "id": "fb_c030",
+      "source": "celebrity",
+      "case_id": "celebrity_9",
+      "birth_info": {
+        "raw": "男命：1904年8月22日 出生地点：四川广安",
+        "gender": "男",
+        "year": 1904,
+        "month": 8,
+        "day": 22,
+        "hour": 10,
+        "minute": 0,
+        "location": "四川广安",
+        "calendar_type": "solar"
+      },
+      "question": "此人的事业领域？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "军事将领"
+        },
+        {
+          "letter": "B",
+          "text": "国家最高领导人，推动改革开放"
+        },
+        {
+          "letter": "C",
+          "text": "商业巨子"
+        },
+        {
+          "letter": "D",
+          "text": "文学家、思想家"
+        }
+      ],
+      "answer": "B",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "邓小平 (Deng Xiaoping)"
+    },
+    {
+      "id": "fb_c031",
+      "source": "celebrity",
+      "case_id": "celebrity_9",
+      "birth_info": {
+        "raw": "男命：1904年8月22日 出生地点：四川广安",
+        "gender": "男",
+        "year": 1904,
+        "month": 8,
+        "day": 22,
+        "hour": 10,
+        "minute": 0,
+        "location": "四川广安",
+        "calendar_type": "solar"
+      },
+      "question": "此人的婚姻特点？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "一婚到底"
+        },
+        {
+          "letter": "B",
+          "text": "三次婚姻（首任妻子去世，第二任离婚，第三任相伴到老）"
+        },
+        {
+          "letter": "C",
+          "text": "终身未婚"
+        },
+        {
+          "letter": "D",
+          "text": "二婚后稳定"
+        }
+      ],
+      "answer": "B",
+      "category": "婚姻",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "邓小平 (Deng Xiaoping)"
+    },
+    {
+      "id": "fb_c032",
+      "source": "celebrity",
+      "case_id": "celebrity_10",
+      "birth_info": {
+        "raw": "女命：1961年7月1日下午7:45 出生地点：英国诺福克",
+        "gender": "女",
+        "year": 1961,
+        "month": 7,
+        "day": 1,
+        "hour": 19,
+        "minute": 45,
+        "location": "英国诺福克",
+        "calendar_type": "solar"
+      },
+      "question": "此人的婚姻状况？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "嫁入皇室但婚姻不幸，最终离婚"
+        },
+        {
+          "letter": "B",
+          "text": "嫁入豪门，婚姻美满"
+        },
+        {
+          "letter": "C",
+          "text": "终身未婚"
+        },
+        {
+          "letter": "D",
+          "text": "平凡婚姻，普通生活"
+        }
+      ],
+      "answer": "A",
+      "category": "婚姻",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "戴安娜王妃 (Princess Diana)"
+    },
+    {
+      "id": "fb_c033",
+      "source": "celebrity",
+      "case_id": "celebrity_10",
+      "birth_info": {
+        "raw": "女命：1961年7月1日下午7:45 出生地点：英国诺福克",
+        "gender": "女",
+        "year": 1961,
+        "month": 7,
+        "day": 1,
+        "hour": 19,
+        "minute": 45,
+        "location": "英国诺福克",
+        "calendar_type": "solar"
+      },
+      "question": "此人36岁（1997年）发生什么？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "事业达到新高峰"
+        },
+        {
+          "letter": "B",
+          "text": "车祸去世"
+        },
+        {
+          "letter": "C",
+          "text": "再婚，开始新生活"
+        },
+        {
+          "letter": "D",
+          "text": "移居海外"
+        }
+      ],
+      "answer": "B",
+      "category": "健康",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "戴安娜王妃 (Princess Diana)"
+    },
+    {
+      "id": "fb_c034",
+      "source": "celebrity",
+      "case_id": "celebrity_10",
+      "birth_info": {
+        "raw": "女命：1961年7月1日下午7:45 出生地点：英国诺福克",
+        "gender": "女",
+        "year": 1961,
+        "month": 7,
+        "day": 1,
+        "hour": 19,
+        "minute": 45,
+        "location": "英国诺福克",
+        "calendar_type": "solar"
+      },
+      "question": "此人一生的社会影响力？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "默默无闻"
+        },
+        {
+          "letter": "B",
+          "text": "全球最受关注的女性之一，慈善事业影响深远"
+        },
+        {
+          "letter": "C",
+          "text": "在学术界有贡献"
+        },
+        {
+          "letter": "D",
+          "text": "在商界有建树"
+        }
+      ],
+      "answer": "B",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "戴安娜王妃 (Princess Diana)"
+    },
+    {
+      "id": "fb_c035",
+      "source": "celebrity",
+      "case_id": "celebrity_11",
+      "birth_info": {
+        "raw": "男命：1958年8月29日晚上11:53 出生地点：美国印第安纳州",
+        "gender": "男",
+        "year": 1958,
+        "month": 8,
+        "day": 29,
+        "hour": 23,
+        "minute": 53,
+        "location": "美国印第安纳州",
+        "calendar_type": "solar"
+      },
+      "question": "此人的事业特点？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "童年出道，成为流行音乐之王，影响全球"
+        },
+        {
+          "letter": "B",
+          "text": "大器晚成，中年才开始音乐事业"
+        },
+        {
+          "letter": "C",
+          "text": "体育明星"
+        },
+        {
+          "letter": "D",
+          "text": "政界人物"
+        }
+      ],
+      "answer": "A",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "迈克尔·杰克逊 (Michael Jackson)"
+    },
+    {
+      "id": "fb_c036",
+      "source": "celebrity",
+      "case_id": "celebrity_11",
+      "birth_info": {
+        "raw": "男命：1958年8月29日晚上11:53 出生地点：美国印第安纳州",
+        "gender": "男",
+        "year": 1958,
+        "month": 8,
+        "day": 29,
+        "hour": 23,
+        "minute": 53,
+        "location": "美国印第安纳州",
+        "calendar_type": "solar"
+      },
+      "question": "此人的外貌特征变化？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "外貌一生未有明显变化"
+        },
+        {
+          "letter": "B",
+          "text": "多次整容，外貌发生巨大变化"
+        },
+        {
+          "letter": "C",
+          "text": "因意外导致面部受伤"
+        },
+        {
+          "letter": "D",
+          "text": "天生残疾"
+        }
+      ],
+      "answer": "B",
+      "category": "外貌",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "迈克尔·杰克逊 (Michael Jackson)"
+    },
+    {
+      "id": "fb_c037",
+      "source": "celebrity",
+      "case_id": "celebrity_11",
+      "birth_info": {
+        "raw": "男命：1958年8月29日晚上11:53 出生地点：美国印第安纳州",
+        "gender": "男",
+        "year": 1958,
+        "month": 8,
+        "day": 29,
+        "hour": 23,
+        "minute": 53,
+        "location": "美国印第安纳州",
+        "calendar_type": "solar"
+      },
+      "question": "此人的生命结局？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "长寿，安度晚年"
+        },
+        {
+          "letter": "B",
+          "text": "50岁因药物过量去世"
+        },
+        {
+          "letter": "C",
+          "text": "车祸去世"
+        },
+        {
+          "letter": "D",
+          "text": "70岁自然去世"
+        }
+      ],
+      "answer": "B",
+      "category": "健康",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "迈克尔·杰克逊 (Michael Jackson)"
+    },
+    {
+      "id": "fb_c038",
+      "source": "celebrity",
+      "case_id": "celebrity_12",
+      "birth_info": {
+        "raw": "男命：1969年12月16日 出生地点：湖北仙桃",
+        "gender": "男",
+        "year": 1969,
+        "month": 12,
+        "day": 16,
+        "hour": 8,
+        "minute": 0,
+        "location": "湖北仙桃",
+        "calendar_type": "solar"
+      },
+      "question": "此人的学业特点？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "学业优秀，两年修完大学四年课程"
+        },
+        {
+          "letter": "B",
+          "text": "学业平平，靠关系进入大学"
+        },
+        {
+          "letter": "C",
+          "text": "高中辍学，直接创业"
+        },
+        {
+          "letter": "D",
+          "text": "海外留学，博士学位"
+        }
+      ],
+      "answer": "A",
+      "category": "学业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "雷军 (Lei Jun)"
+    },
+    {
+      "id": "fb_c039",
+      "source": "celebrity",
+      "case_id": "celebrity_12",
+      "birth_info": {
+        "raw": "男命：1969年12月16日 出生地点：湖北仙桃",
+        "gender": "男",
+        "year": 1969,
+        "month": 12,
+        "day": 16,
+        "hour": 8,
+        "minute": 0,
+        "location": "湖北仙桃",
+        "calendar_type": "solar"
+      },
+      "question": "此人41岁（2010年前后）发生什么？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "退休享受生活"
+        },
+        {
+          "letter": "B",
+          "text": "创办小米公司，二次创业"
+        },
+        {
+          "letter": "C",
+          "text": "遭遇重大投资失败"
+        },
+        {
+          "letter": "D",
+          "text": "转行进入影视行业"
+        }
+      ],
+      "answer": "B",
+      "category": "事业",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "雷军 (Lei Jun)"
+    },
+    {
+      "id": "fb_c040",
+      "source": "celebrity",
+      "case_id": "celebrity_12",
+      "birth_info": {
+        "raw": "男命：1969年12月16日 出生地点：湖北仙桃",
+        "gender": "男",
+        "year": 1969,
+        "month": 12,
+        "day": 16,
+        "hour": 8,
+        "minute": 0,
+        "location": "湖北仙桃",
+        "calendar_type": "solar"
+      },
+      "question": "此人的性格特征？",
+      "options": [
+        {
+          "letter": "A",
+          "text": "低调沉稳，不善言辞"
+        },
+        {
+          "letter": "B",
+          "text": "勤奋刻苦，亲和力强，善于营销和公关"
+        },
+        {
+          "letter": "C",
+          "text": "霸道强势，独断专行"
+        },
+        {
+          "letter": "D",
+          "text": "安于现状，不求上进"
+        }
+      ],
+      "answer": "B",
+      "category": "性格",
+      "difficulty": "hard",
+      "year": 0,
+      "celebrity_name": "雷军 (Lei Jun)"
+    }
+  ],
+  "source": "celebrity",
+  "count": 40,
+  "celebrities": [
+    "黄仁勋 (Jensen Huang)",
+    "马云 (Jack Ma)",
+    "乔布斯 (Steve Jobs)",
+    "邓丽君 (Teresa Teng)",
+    "李小龙 (Bruce Lee)",
+    "马斯克 (Elon Musk)",
+    "周杰伦 (Jay Chou)",
+    "玛丽莲·梦露 (Marilyn Monroe)",
+    "邓小平 (Deng Xiaoping)",
+    "戴安娜王妃 (Princess Diana)",
+    "迈克尔·杰克逊 (Michael Jackson)",
+    "雷军 (Lei Jun)"
+  ]
+}
