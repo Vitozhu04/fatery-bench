@@ -239,23 +239,27 @@
     tbody.innerHTML = rows.map(function(r, i) {
       var rank = i + 1;
       var isHuman = r.isHuman;
-      var rankClass = isHuman ? '' : (rank <= 3 ? 'rank-' + rank : '');
+      var isRandom = r.isRandom;
+      var isRef = isHuman || isRandom;
+      var rankClass = isRef ? '' : (rank <= 3 ? 'rank-' + rank : '');
       var accStr = (r.accuracy * 100).toFixed(1) + '%';
       var barW = Math.max(r.accuracy * 180, 0);
       var badge = r.isFatery ? '<span class="fatery-badge">Fatery</span>' : '';
       var humanBadge = isHuman ? '<span class="human-badge">Human</span>' : '';
-      var approach = isHuman ? 'Competition' : (r.isFatery ? 'Prompt + Chart' : 'Baseline');
+      var randomBadge = isRandom ? '<span class="random-badge">Baseline</span>' : '';
+      var approach = isHuman ? 'Competition' : (isRandom ? 'Random' : (r.isFatery ? 'Prompt + Chart' : 'Baseline'));
       var note = r.note ? ' <span class="note-icon" title="' + r.note + '">&#9888;</span>' : '';
-      var rowClass = isHuman ? 'human-row' : '';
-      var scoreStr = isHuman ? r.correct + ' / ' + r.total : r.correct + ' / ' + r.total;
-      var displayRank = isHuman ? '-' : rank;
+      var rowClass = isHuman ? 'human-row' : (isRandom ? 'random-row' : '');
+      var scoreStr = r.correct + ' / ' + r.total;
+      var displayRank = isRef ? '-' : rank;
+      var barClass = isHuman ? ' human' : (isRandom ? ' random' : '');
 
       return '<tr class="' + rowClass + '">'
         + '<td class="rank ' + rankClass + '">' + displayRank + '</td>'
-        + '<td><span class="model-name">' + r.model + '</span>' + badge + humanBadge + note + '</td>'
+        + '<td><span class="model-name">' + r.model + '</span>' + badge + humanBadge + randomBadge + note + '</td>'
         + '<td class="model-provider">' + r.provider + '</td>'
         + '<td class="approach-label">' + approach + '</td>'
-        + '<td class="accuracy-cell">' + accStr + '<span class="accuracy-bar' + (isHuman ? ' human' : '') + '" style="width:' + barW + 'px"></span></td>'
+        + '<td class="accuracy-cell">' + accStr + '<span class="accuracy-bar' + barClass + '" style="width:' + barW + 'px"></span></td>'
         + '<td>' + scoreStr + '</td>'
         + '</tr>';
     }).join('');
@@ -266,6 +270,7 @@
     var card = document.getElementById('liftCard');
     var d = BENCHMARK_DATA.fateryLift;
     var scale = 0.70;
+    var rPct = (0.25 / scale * 100).toFixed(0);
     var bPct = (d.baseline.accuracy / scale * 100).toFixed(0);
     var fPct = (d.fatery.accuracy / scale * 100).toFixed(0);
     var hPct = (0.60 / scale * 100).toFixed(0);
@@ -275,6 +280,11 @@
       + '<span class="lift-sub">on ' + d.total + ' competition questions</span>'
       + '</div>'
       + '<div class="lift-bars">'
+      + '<div class="lift-row">'
+      + '  <span class="lift-row-label">Random</span>'
+      + '  <div class="lift-bar-track"><div class="lift-bar-fill random-bar" style="width:' + rPct + '%"><span>25.0%</span></div></div>'
+      + '  <span style="width:56px"></span>'
+      + '</div>'
       + '<div class="lift-row">'
       + '  <span class="lift-row-label">Baseline</span>'
       + '  <div class="lift-bar-track"><div class="lift-bar-fill baseline" style="width:' + bPct + '%"><span>' + (d.baseline.accuracy * 100).toFixed(1) + '%</span></div></div>'

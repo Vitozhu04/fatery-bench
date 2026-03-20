@@ -331,6 +331,32 @@ section { margin-bottom: 64px; }
   border-bottom: 2px dashed rgba(100, 181, 246, 0.2) !important;
 }
 
+.random-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(122, 122, 122, 0.1);
+  border: 1px solid rgba(122, 122, 122, 0.25);
+  color: var(--text-dim);
+  font-size: 0.65rem;
+  font-weight: 600;
+  margin-left: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.random-row td {
+  border-top: 2px dashed rgba(122, 122, 122, 0.2) !important;
+}
+
+.random-row .model-name {
+  color: var(--text-dim);
+}
+
+.accuracy-bar.random {
+  background: var(--text-dim);
+}
+
 .human-row .model-name {
   color: var(--human-blue);
 }
@@ -449,6 +475,12 @@ section { margin-bottom: 64px; }
 .lift-bar-fill.human-bar {
   background: linear-gradient(135deg, var(--human-blue) 0%, #42A5F5 100%);
   color: var(--bg);
+}
+
+.lift-bar-fill.random-bar {
+  background: var(--bg-secondary);
+  border: 1px dashed var(--text-dim);
+  color: var(--text-dim);
 }
 
 .lift-delta {

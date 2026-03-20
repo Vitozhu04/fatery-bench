@@ -132,6 +132,16 @@ const BENCHMARK_DATA = {
       total: 196,
       note: "API instability — 231/236 connection errors",
     },
+    {
+      model: "Random Baseline",
+      modelId: "random",
+      provider: "-",
+      isRandom: true,
+      accuracy: 0.25,
+      correct: "~49",
+      total: 196,
+      note: "4-choice random guess = 25%",
+    },
   ],
 
   // Fatery's base model lift
