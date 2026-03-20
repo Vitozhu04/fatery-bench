@@ -1,12 +1,11 @@
 /**
  * FateryBench leaderboard data.
- * This file is auto-generated from results/ directory.
- * To update: python scripts/build_docs_data.py
+ * Updated after each benchmark run.
  */
 
 const BENCHMARK_DATA = {
   version: "1.0",
-  lastUpdated: "2025-03-19",
+  lastUpdated: "2025-03-20",
   totalQuestions: 272,
 
   dataset: {
@@ -34,69 +33,59 @@ const BENCHMARK_DATA = {
     },
   },
 
-  // Placeholder results — will be replaced with actual benchmark data
-  // Fatery = Gemini 3 Flash + Fatery-Enhanced prompt
-  // Format: model → mode → accuracy
+  // Leaderboard: each model runs baseline mode (same simple prompt)
+  // Fatery = gemini-3-flash + professional prompt + pre-computed chart
+  // Placeholder scores — replace with real results after benchmark run
   results: [
     {
-      model: "Fatery (Gemini 3 Flash + Prompt)",
+      model: "Fatery",
       modelId: "gemini-3-flash",
       provider: "Fatery.me",
-      isFateryDefault: true,
-      scores: {
-        vanilla: { accuracy: 0.0, correct: 0, total: 272 },
-        cot: { accuracy: 0.0, correct: 0, total: 272 },
-        astro: { accuracy: 0.0, correct: 0, total: 272 },
-        fatery: { accuracy: 0.0, correct: 0, total: 272 },
-      },
+      mode: "fatery",
+      isFatery: true,
+      accuracy: 0.0,
+      correct: 0,
+      total: 272,
     },
     {
       model: "Gemini 3 Flash",
       modelId: "gemini-3-flash",
       provider: "Google",
-      isFateryDefault: false,
-      scores: {
-        vanilla: { accuracy: 0.0, correct: 0, total: 272 },
-        cot: { accuracy: 0.0, correct: 0, total: 272 },
-        astro: { accuracy: 0.0, correct: 0, total: 272 },
-        fatery: { accuracy: 0.0, correct: 0, total: 272 },
-      },
+      mode: "baseline",
+      isFatery: false,
+      accuracy: 0.0,
+      correct: 0,
+      total: 272,
     },
     {
       model: "Gemini 3 Pro",
       modelId: "gemini-3-pro",
       provider: "Google",
-      isFateryDefault: false,
-      scores: {
-        vanilla: { accuracy: 0.0, correct: 0, total: 272 },
-        cot: { accuracy: 0.0, correct: 0, total: 272 },
-        astro: { accuracy: 0.0, correct: 0, total: 272 },
-        fatery: { accuracy: 0.0, correct: 0, total: 272 },
-      },
+      mode: "baseline",
+      isFatery: false,
+      accuracy: 0.0,
+      correct: 0,
+      total: 272,
     },
     {
       model: "GPT-5.3",
       modelId: "gpt-5.3",
       provider: "OpenAI",
-      isFateryDefault: false,
-      scores: {
-        vanilla: { accuracy: 0.0, correct: 0, total: 272 },
-        cot: { accuracy: 0.0, correct: 0, total: 272 },
-        astro: { accuracy: 0.0, correct: 0, total: 272 },
-        fatery: { accuracy: 0.0, correct: 0, total: 272 },
-      },
+      mode: "baseline",
+      isFatery: false,
+      accuracy: 0.0,
+      correct: 0,
+      total: 272,
     },
     {
       model: "DeepSeek Thinking",
       modelId: "deepseek-reasoner",
       provider: "DeepSeek",
-      isFateryDefault: false,
-      scores: {
-        vanilla: { accuracy: 0.0, correct: 0, total: 272 },
-        cot: { accuracy: 0.0, correct: 0, total: 272 },
-        astro: { accuracy: 0.0, correct: 0, total: 272 },
-        fatery: { accuracy: 0.0, correct: 0, total: 272 },
-      },
+      mode: "baseline",
+      isFatery: false,
+      accuracy: 0.0,
+      correct: 0,
+      total: 272,
     },
   ],
 
