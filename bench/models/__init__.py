@@ -3,17 +3,17 @@
 from bench.models.base import ModelClient
 from bench.models.google import GeminiClient
 from bench.models.openai_client import OpenAIClient
-from bench.models.anthropic_client import AnthropicClient
 from bench.models.deepseek import DeepSeekClient
 
 MODEL_REGISTRY: dict[str, type[ModelClient]] = {
-    "gemini-2.5-flash": GeminiClient,
-    "gemini-2.5-pro": GeminiClient,
-    "gpt-4o": OpenAIClient,
-    "gpt-4o-mini": OpenAIClient,
-    "claude-sonnet-4": AnthropicClient,
-    "deepseek-chat": DeepSeekClient,
+    "gemini-3-flash": GeminiClient,
+    "gemini-3-pro": GeminiClient,
+    "gpt-5.3": OpenAIClient,
+    "deepseek-reasoner": DeepSeekClient,
 }
+
+# Fatery = gemini-3-flash + fatery-enhanced prompt
+FATERY_MODEL = "gemini-3-flash"
 
 
 def create_client(model_name: str) -> ModelClient:

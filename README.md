@@ -31,12 +31,11 @@ All questions are based on real birth data with verified life events.
 
 | Model | Provider | Notes |
 |-------|----------|-------|
-| Gemini 2.5 Flash | Google | Fatery default model |
-| Gemini 2.5 Pro | Google | Fatery Pro model |
-| GPT-4o | OpenAI | Industry benchmark |
-| GPT-4o-mini | OpenAI | Cost-efficient option |
-| Claude Sonnet 4 | Anthropic | Strong reasoning |
-| DeepSeek V3 | DeepSeek | Chinese language specialist |
+| **Fatery** | Fatery.me | Gemini 3 Flash + Fatery-Enhanced prompt |
+| Gemini 3 Flash | Google | Fatery base model |
+| Gemini 3 Pro | Google | Google's flagship reasoning model |
+| GPT-5.3 | OpenAI | OpenAI's latest |
+| DeepSeek Thinking | DeepSeek | Reasoning model, Chinese language specialist |
 
 ## Quick Start
 
@@ -45,10 +44,10 @@ All questions are based on real birth data with verified life events.
 pip install -r requirements.txt
 
 # Run benchmark (small sample)
-python -m bench.runner --model gemini-2.5-flash --mode vanilla --sample 10
+python -m bench --model gemini-3-flash --mode vanilla --sample 10
 
 # Run full benchmark
-python -m bench.runner --model gemini-2.5-flash --mode all
+python -m bench --model gemini-3-flash --mode all
 
 # View results
 open docs/index.html

@@ -35,12 +35,13 @@ const BENCHMARK_DATA = {
   },
 
   // Placeholder results — will be replaced with actual benchmark data
+  // Fatery = Gemini 3 Flash + Fatery-Enhanced prompt
   // Format: model → mode → accuracy
   results: [
     {
-      model: "Gemini 2.5 Flash",
-      modelId: "gemini-2.5-flash",
-      provider: "Google",
+      model: "Fatery (Gemini 3 Flash + Prompt)",
+      modelId: "gemini-3-flash",
+      provider: "Fatery.me",
       isFateryDefault: true,
       scores: {
         vanilla: { accuracy: 0.0, correct: 0, total: 272 },
@@ -50,8 +51,8 @@ const BENCHMARK_DATA = {
       },
     },
     {
-      model: "Gemini 2.5 Pro",
-      modelId: "gemini-2.5-pro",
+      model: "Gemini 3 Flash",
+      modelId: "gemini-3-flash",
       provider: "Google",
       isFateryDefault: false,
       scores: {
@@ -62,8 +63,20 @@ const BENCHMARK_DATA = {
       },
     },
     {
-      model: "GPT-4o",
-      modelId: "gpt-4o",
+      model: "Gemini 3 Pro",
+      modelId: "gemini-3-pro",
+      provider: "Google",
+      isFateryDefault: false,
+      scores: {
+        vanilla: { accuracy: 0.0, correct: 0, total: 272 },
+        cot: { accuracy: 0.0, correct: 0, total: 272 },
+        astro: { accuracy: 0.0, correct: 0, total: 272 },
+        fatery: { accuracy: 0.0, correct: 0, total: 272 },
+      },
+    },
+    {
+      model: "GPT-5.3",
+      modelId: "gpt-5.3",
       provider: "OpenAI",
       isFateryDefault: false,
       scores: {
@@ -74,32 +87,8 @@ const BENCHMARK_DATA = {
       },
     },
     {
-      model: "GPT-4o mini",
-      modelId: "gpt-4o-mini",
-      provider: "OpenAI",
-      isFateryDefault: false,
-      scores: {
-        vanilla: { accuracy: 0.0, correct: 0, total: 272 },
-        cot: { accuracy: 0.0, correct: 0, total: 272 },
-        astro: { accuracy: 0.0, correct: 0, total: 272 },
-        fatery: { accuracy: 0.0, correct: 0, total: 272 },
-      },
-    },
-    {
-      model: "Claude Sonnet 4",
-      modelId: "claude-sonnet-4",
-      provider: "Anthropic",
-      isFateryDefault: false,
-      scores: {
-        vanilla: { accuracy: 0.0, correct: 0, total: 272 },
-        cot: { accuracy: 0.0, correct: 0, total: 272 },
-        astro: { accuracy: 0.0, correct: 0, total: 272 },
-        fatery: { accuracy: 0.0, correct: 0, total: 272 },
-      },
-    },
-    {
-      model: "DeepSeek V3",
-      modelId: "deepseek-chat",
+      model: "DeepSeek Thinking",
+      modelId: "deepseek-reasoner",
       provider: "DeepSeek",
       isFateryDefault: false,
       scores: {

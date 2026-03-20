@@ -10,12 +10,10 @@ if [ "${1:-}" = "--sample" ] && [ -n "${2:-}" ]; then
 fi
 
 MODELS=(
-    "gemini-2.5-flash"
-    "gemini-2.5-pro"
-    "gpt-4o"
-    "gpt-4o-mini"
-    "claude-sonnet-4"
-    "deepseek-chat"
+    "gemini-3-flash"
+    "gemini-3-pro"
+    "gpt-5.3"
+    "deepseek-reasoner"
 )
 
 MODES=("vanilla" "cot" "astro" "fatery")
@@ -31,3 +29,5 @@ for model in "${MODELS[@]}"; do
 done
 
 echo "All benchmarks complete. Results in results/"
+echo ""
+echo "Note: Fatery = gemini-3-flash + fatery mode (fatery-enhanced prompt)"
