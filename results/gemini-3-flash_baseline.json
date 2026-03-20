@@ -1,0 +1,67 @@
+{
+  "benchmark": "FateryBench",
+  "version": "1.0",
+  "model": "gemini-3-flash",
+  "mode": "baseline",
+  "timestamp": "2026-03-20T06:41:58.516253+00:00",
+  "config": {
+    "sample": 2,
+    "seed": 42,
+    "workers": 1,
+    "category_filter": null,
+    "source_filter": null
+  },
+  "metrics": {
+    "total": 2,
+    "correct": 0,
+    "accuracy": 0.0,
+    "by_category": {
+      "性格": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "运势": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    },
+    "by_source": {
+      "hkjfma_2022": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "hkjfma_2025": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "results": [
+    {
+      "question_id": "fb_0029",
+      "source": "hkjfma_2022",
+      "category": "性格",
+      "question": "命主个性及特色原因？",
+      "correct_answer": "C",
+      "predicted_answer": null,
+      "correct": false,
+      "response_time": 4.52,
+      "error": "404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}"
+    },
+    {
+      "question_id": "fb_0164",
+      "source": "hkjfma_2025",
+      "category": "运势",
+      "question": "1980 年發生何事?",
+      "correct_answer": "A",
+      "predicted_answer": null,
+      "correct": false,
+      "response_time": 1.91,
+      "error": "404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}"
+    }
+  ]
+}

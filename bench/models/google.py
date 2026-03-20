@@ -9,7 +9,7 @@ from bench.models.base import ModelClient, SYSTEM_PROMPT
 class GeminiClient(ModelClient):
 
     def _get_api_key(self) -> str:
-        return self._env_key("GOOGLE_API_KEY", "GEMINI_API_KEY")
+        return self._env_key("GOOGLE_API_KEY", "GOOGLE_GENERATIVE_AI_API_KEY", "GEMINI_API_KEY")
 
     def generate(self, prompt: str, system: str = SYSTEM_PROMPT) -> str:
         client = genai.Client(api_key=self.api_key)

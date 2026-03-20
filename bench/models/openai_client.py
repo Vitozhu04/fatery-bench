@@ -4,6 +4,9 @@ from openai import OpenAI
 
 from bench.models.base import ModelClient, SYSTEM_PROMPT
 
+# Models that don't support temperature=0 or max_completion_tokens
+_CHAT_ONLY_MODELS = {"gpt-5.3-chat-latest"}
+
 
 class OpenAIClient(ModelClient):
 
@@ -12,13 +15,21 @@ class OpenAIClient(ModelClient):
 
     def generate(self, prompt: str, system: str = SYSTEM_PROMPT) -> str:
         client = OpenAI(api_key=self.api_key)
-        response = client.chat.completions.create(
-            model=self.model_name,
-            messages=[
+
+        kwargs: dict = {
+            "model": self.model_name,
+            "messages": [
                 {"role": "system", "content": system},
                 {"role": "user", "content": prompt},
             ],
-            temperature=self.DEFAULT_TEMPERATURE,
-            max_tokens=self.DEFAULT_MAX_TOKENS,
-        )
+        }
+
+        if self.model_name in _CHAT_ONLY_MODELS:
+            # Chat-only models: no temperature control
+            kwargs["max_completion_tokens"] = self.DEFAULT_MAX_TOKENS
+        else:
+            kwargs["temperature"] = self.DEFAULT_TEMPERATURE
+            kwargs["max_completion_tokens"] = self.DEFAULT_MAX_TOKENS
+
+        response = client.chat.completions.create(**kwargs)
         return response.choices[0].message.content or ""

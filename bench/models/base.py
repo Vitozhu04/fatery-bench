@@ -14,7 +14,7 @@ class ModelClient(ABC):
     """Abstract base class for LLM model clients."""
 
     DEFAULT_TEMPERATURE = 0.0
-    DEFAULT_MAX_TOKENS = 4096
+    DEFAULT_MAX_TOKENS = 16384
 
     def __init__(self, model_name: str, api_key: str | None = None):
         self.model_name = model_name

@@ -4,35 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FateryBench — Chinese Metaphysics LLM Benchmark</title>
-  <meta name="description" content="The most comprehensive Chinese metaphysics (命理) prediction benchmark for LLMs. 272 questions across 12 categories.">
+  <meta name="description" content="Benchmark for evaluating LLMs on Chinese metaphysics (BaZi) prediction. 196 competition questions from HKJFMA 2022-2025.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Hero -->
 <header class="hero">
   <div class="container">
     <h1>FateryBench</h1>
     <p class="subtitle">
-      The most comprehensive Chinese metaphysics (命理) prediction benchmark for LLMs.
-      Can AI understand the Four Pillars of Destiny?
+      Can AI master the Four Pillars of Destiny?<br>
+      The first benchmark for Chinese metaphysics prediction.
     </p>
     <div class="stats-row">
       <div class="stat">
-        <div class="number">272</div>
+        <div class="number">196</div>
         <div class="label">Questions</div>
       </div>
       <div class="stat">
-        <div class="number">5</div>
-        <div class="label">Contestants</div>
+        <div class="number">10</div>
+        <div class="label">Models</div>
       </div>
       <div class="stat">
         <div class="number">12</div>
         <div class="label">Categories</div>
       </div>
       <div class="stat">
-        <div class="number">25%</div>
-        <div class="label">Random Baseline</div>
+        <div class="number">60%</div>
+        <div class="label">Human Top 3</div>
       </div>
     </div>
   </div>
@@ -40,14 +39,39 @@
 
 <main class="container">
 
+  <!-- Key Finding -->
+  <section id="finding">
+    <div class="finding-card">
+      <div class="finding-left">
+        <div class="finding-label">Key Finding</div>
+        <div class="finding-stat">+13.8%</div>
+        <div class="finding-desc">accuracy lift with Fatery's prompt engineering and pre-computed BaZi chart data</div>
+      </div>
+      <div class="finding-right">
+        <div class="finding-compare">
+          <div class="compare-item">
+            <span class="compare-label">Baseline</span>
+            <span class="compare-value">30.1%</span>
+          </div>
+          <div class="compare-arrow">&rarr;</div>
+          <div class="compare-item highlight">
+            <span class="compare-label">Fatery</span>
+            <span class="compare-value">43.9%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
   <!-- Leaderboard -->
   <section id="leaderboard">
     <h2 class="section-title">Leaderboard</h2>
-    <p style="margin-bottom: 20px; color: var(--text-secondary); font-size: 0.9rem;">
-      All models receive the same question with a simple prompt: "你是八字分析师，先排盘再回答".<br>
-      <strong>Fatery</strong> uses the same base model (Gemini 3 Flash) but with professional prompt engineering + pre-computed chart data.
+    <p class="section-note">
+      Scored on 196 HKJFMA competition questions (2022-2025). Celebrity cases excluded due to data contamination.
+      Human reference: HKJFMA 2024 3rd place = 60% (source: <a href="https://arxiv.org/abs/2510.23337" target="_blank">arXiv:2510.23337</a>). Random baseline = 25%.
     </p>
-
     <table class="leaderboard-table" id="leaderboardTable">
       <thead>
         <tr>
@@ -56,70 +80,137 @@
           <th>Provider</th>
           <th>Approach</th>
           <th>Accuracy</th>
-          <th>Correct / Total</th>
+          <th>Score</th>
         </tr>
       </thead>
-      <tbody id="leaderboardBody">
-        <!-- Rendered by JS -->
-      </tbody>
+      <tbody id="leaderboardBody"></tbody>
     </table>
-    <p style="margin-top: 12px; font-size: 0.85rem; color: var(--text-muted);">
-      Results are placeholder — run the benchmark to populate with real data.
-    </p>
   </section>
+
+  <hr class="section-divider">
+
+  <!-- Fatery Lift -->
+  <section id="lift">
+    <h2 class="section-title">The Fatery Effect</h2>
+    <p class="section-note">
+      Same model (Gemini 3 Flash), same questions.
+      Fatery adds a professional system prompt and pre-computed BaZi chart data — four pillars and Da Yun cycles calculated by a deterministic algorithm.
+    </p>
+    <div class="lift-card" id="liftCard"></div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Results Explorer -->
+  <section id="explorer">
+    <h2 class="section-title">Results Explorer</h2>
+    <p class="section-note">
+      Browse every question and see how each model answered. Click a row to expand the full case.
+    </p>
+
+    <!-- Filters -->
+    <div class="explorer-filters">
+      <div class="filter-group">
+        <label>Source</label>
+        <select id="filterSource">
+          <option value="all">All Sources</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Category</label>
+        <select id="filterCategory">
+          <option value="all">All Categories</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Model Focus</label>
+        <select id="filterModel">
+          <option value="all">All Models</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Show</label>
+        <select id="filterCorrectness">
+          <option value="all">All Questions</option>
+          <option value="hard">Hardest (no model correct)</option>
+          <option value="easy">Easiest (all models correct)</option>
+          <option value="fatery-only">Only Fatery correct</option>
+        </select>
+      </div>
+      <div class="filter-stats" id="filterStats"></div>
+    </div>
+
+    <!-- Explorer Table -->
+    <div class="explorer-table-wrap">
+      <table class="explorer-table" id="explorerTable">
+        <thead>
+          <tr>
+            <th class="col-id">ID</th>
+            <th class="col-source">Source</th>
+            <th class="col-cat">Category</th>
+            <th class="col-question">Question</th>
+            <th class="col-answer">Answer</th>
+            <th class="col-models" id="modelHeaders"></th>
+          </tr>
+        </thead>
+        <tbody id="explorerBody"></tbody>
+      </table>
+    </div>
+
+    <div class="explorer-pagination" id="explorerPagination"></div>
+  </section>
+
+  <hr class="section-divider">
 
   <!-- How it works -->
   <section id="approach">
     <h2 class="section-title">Baseline vs. Fatery</h2>
-    <div class="charts-grid">
-      <div class="chart-card">
-        <h3>Baseline (All Models)</h3>
-        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px;">
-          Same simple prompt for every model:
-        </p>
-        <div style="background: var(--bg-secondary); border-radius: 8px; padding: 16px; font-family: monospace; font-size: 0.8rem; color: var(--text-muted); line-height: 1.5;">
-          System: "你是一位八字分析师，先排盘分析再回答"<br><br>
-          命主信息：男命：1974年4月28日...<br>
+    <div class="approach-grid">
+      <div class="approach-card">
+        <h3>Baseline</h3>
+        <p class="desc">Simple prompt — the model must calculate everything from scratch.</p>
+        <div class="code-block muted">
+          System: 你是一位八字分析师<br><br>
+          命主信息：男命 1974年4月28日…<br>
           问题：此命1996年发生何事？<br>
-          选项：A/B/C/D<br>
+          选项：A / B / C / D<br><br>
           请先排出八字命盘，分析后给出答案。
         </div>
       </div>
-      <div class="chart-card">
-        <h3>Fatery (Gemini 3 Flash + Prompt + Chart)</h3>
-        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px;">
-          Professional prompt engineering + pre-computed bazi chart:
-        </p>
-        <div style="background: var(--bg-secondary); border-radius: 8px; padding: 16px; font-family: monospace; font-size: 0.8rem; color: var(--accent-light); line-height: 1.5;">
-          System: "命运精算师" — 6-step analysis framework<br><br>
-          + Pre-computed chart data (排盘结果)<br>
-          + Structured STEP 1-4 analysis pipeline<br>
-          + Category-specific analysis strategies<br>
-          + Option-by-option evaluation
+      <div class="approach-card">
+        <h3>Fatery</h3>
+        <p class="desc">Production prompt from Fatery.me — structured analysis with pre-computed chart.</p>
+        <div class="code-block accent">
+          System: 命运精算师 — 4-step protocol<br>
+          ├ STEP 1  命盘分析（日主·强弱·用神·忌神）<br>
+          ├ STEP 2  宏观周期弧（大运）<br>
+          ├ STEP 3  针对性分析（冲合刑害）<br>
+          └ STEP 4  选项评估<br><br>
+          + Pre-computed 四柱八字 via lunar-python<br>
+          + Pre-computed 大运 (8 decade cycles)
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Dataset Overview -->
+  <hr class="section-divider">
+
+  <!-- Dataset -->
   <section id="dataset">
-    <h2 class="section-title">Dataset Overview</h2>
+    <h2 class="section-title">Dataset</h2>
+    <p class="section-note">
+      196 multiple-choice questions from four years of HKJFMA (Hong Kong Junior Feng Shui Masters Association) competitions across 12 categories.
+    </p>
     <div class="charts-grid">
       <div class="chart-card">
-        <h3>Questions by Source</h3>
+        <h3>By Source</h3>
         <div class="bar-chart" id="sourceChart"></div>
       </div>
       <div class="chart-card">
-        <h3>Questions by Category</h3>
+        <h3>By Category</h3>
         <div class="bar-chart" id="categoryChart"></div>
       </div>
     </div>
-  </section>
-
-  <!-- Sample Questions -->
-  <section id="samples">
-    <h2 class="section-title">Sample Questions</h2>
-    <div id="sampleQuestions"></div>
   </section>
 
 </main>
@@ -128,91 +219,342 @@
   <div class="container">
     <p>
       FateryBench by <a href="https://fatery.me" target="_blank">Fatery.me</a>
-      · Inspired by <a href="https://github.com/DestinyLinker/ftbench" target="_blank">ftbench</a>
-      · <a href="https://github.com/Vitozhu04/fatery-bench" target="_blank">GitHub</a>
-    </p>
-    <p style="margin-top: 8px;">
-      Data sourced from public HKJFMA competitions and verified public records.
+      &middot; Data from public HKJFMA competitions (2022-2025)
+      &middot; <a href="https://github.com/Vitozhu04/fatery-bench" target="_blank">GitHub</a>
     </p>
   </div>
 </footer>
 
 <script src="data.js"></script>
+<script src="details_data.js"></script>
 <script>
 (function() {
   'use strict';
 
-  // --- Leaderboard ---
+  /* --- Leaderboard --- */
   function renderLeaderboard() {
-    const tbody = document.getElementById('leaderboardBody');
-    const rows = [...BENCHMARK_DATA.results].sort((a, b) => b.accuracy - a.accuracy);
+    var tbody = document.getElementById('leaderboardBody');
+    var rows = BENCHMARK_DATA.results.slice().sort(function(a, b) { return b.accuracy - a.accuracy; });
 
-    tbody.innerHTML = rows.map((r, i) => {
-      const rank = i + 1;
-      const rankClass = rank <= 3 ? `rank-${rank}` : '';
-      const acc = r.accuracy;
-      const accStr = acc > 0 ? `${(acc * 100).toFixed(1)}%` : '—';
-      const barWidth = Math.max(acc * 200, 0);
-      const badge = r.isFatery ? '<span class="fatery-badge">Fatery</span>' : '';
-      const approach = r.isFatery ? 'Pro Prompt + Chart' : 'Baseline';
+    tbody.innerHTML = rows.map(function(r, i) {
+      var rank = i + 1;
+      var isHuman = r.isHuman;
+      var rankClass = isHuman ? '' : (rank <= 3 ? 'rank-' + rank : '');
+      var accStr = (r.accuracy * 100).toFixed(1) + '%';
+      var barW = Math.max(r.accuracy * 180, 0);
+      var badge = r.isFatery ? '<span class="fatery-badge">Fatery</span>' : '';
+      var humanBadge = isHuman ? '<span class="human-badge">Human</span>' : '';
+      var approach = isHuman ? 'Competition' : (r.isFatery ? 'Prompt + Chart' : 'Baseline');
+      var note = r.note ? ' <span class="note-icon" title="' + r.note + '">&#9888;</span>' : '';
+      var rowClass = isHuman ? 'human-row' : '';
+      var scoreStr = isHuman ? r.correct + ' / ' + r.total : r.correct + ' / ' + r.total;
+      var displayRank = isHuman ? '-' : rank;
 
-      return `<tr>
-        <td class="rank ${rankClass}">${rank}</td>
-        <td><span class="model-name">${r.model}</span>${badge}</td>
-        <td class="model-provider">${r.provider}</td>
-        <td style="font-size: 0.85rem; color: var(--text-secondary)">${approach}</td>
-        <td class="accuracy-cell">
-          ${acc > 0 ? accStr : '<span class="no-data">Pending</span>'}
-          ${acc > 0 ? `<span class="accuracy-bar" style="width:${barWidth}px"></span>` : ''}
-        </td>
-        <td>${acc > 0 ? `${r.correct} / ${r.total}` : '—'}</td>
-      </tr>`;
+      return '<tr class="' + rowClass + '">'
+        + '<td class="rank ' + rankClass + '">' + displayRank + '</td>'
+        + '<td><span class="model-name">' + r.model + '</span>' + badge + humanBadge + note + '</td>'
+        + '<td class="model-provider">' + r.provider + '</td>'
+        + '<td class="approach-label">' + approach + '</td>'
+        + '<td class="accuracy-cell">' + accStr + '<span class="accuracy-bar' + (isHuman ? ' human' : '') + '" style="width:' + barW + 'px"></span></td>'
+        + '<td>' + scoreStr + '</td>'
+        + '</tr>';
     }).join('');
   }
 
-  // --- Charts ---
-  function renderBarChart(containerId, data) {
-    const container = document.getElementById(containerId);
-    const maxVal = Math.max(...Object.values(data));
-    container.innerHTML = Object.entries(data).map(([label, count]) => {
-      const pct = (count / maxVal * 100).toFixed(0);
-      return `<div class="bar-item">
-        <span class="bar-label">${label}</span>
-        <div class="bar-track">
-          <div class="bar-fill" style="width:${pct}%">${count}</div>
-        </div>
-      </div>`;
+  /* --- Lift --- */
+  function renderLift() {
+    var card = document.getElementById('liftCard');
+    var d = BENCHMARK_DATA.fateryLift;
+    var scale = 0.70;
+    var bPct = (d.baseline.accuracy / scale * 100).toFixed(0);
+    var fPct = (d.fatery.accuracy / scale * 100).toFixed(0);
+    var hPct = (0.60 / scale * 100).toFixed(0);
+
+    card.innerHTML = '<div class="lift-header">'
+      + '<span class="lift-model">' + d.model + '</span>'
+      + '<span class="lift-sub">on ' + d.total + ' competition questions</span>'
+      + '</div>'
+      + '<div class="lift-bars">'
+      + '<div class="lift-row">'
+      + '  <span class="lift-row-label">Baseline</span>'
+      + '  <div class="lift-bar-track"><div class="lift-bar-fill baseline" style="width:' + bPct + '%"><span>' + (d.baseline.accuracy * 100).toFixed(1) + '%</span></div></div>'
+      + '  <span style="width:56px"></span>'
+      + '</div>'
+      + '<div class="lift-row">'
+      + '  <span class="lift-row-label">Fatery</span>'
+      + '  <div class="lift-bar-track"><div class="lift-bar-fill fatery" style="width:' + fPct + '%"><span>' + (d.fatery.accuracy * 100).toFixed(1) + '%</span></div></div>'
+      + '  <span class="lift-delta">+' + d.delta + '</span>'
+      + '</div>'
+      + '<div class="lift-row">'
+      + '  <span class="lift-row-label">Human Top 3</span>'
+      + '  <div class="lift-bar-track"><div class="lift-bar-fill human-bar" style="width:' + hPct + '%"><span>60.0%</span></div></div>'
+      + '  <span style="width:56px"></span>'
+      + '</div>'
+      + '</div>';
+  }
+
+  /* --- Bar Charts --- */
+  function renderBarChart(id, data) {
+    var el = document.getElementById(id);
+    var max = Math.max.apply(null, Object.values(data));
+    el.innerHTML = Object.entries(data).map(function(e) {
+      var pct = (e[1] / max * 100).toFixed(0);
+      return '<div class="bar-item">'
+        + '<span class="bar-label">' + e[0] + '</span>'
+        + '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%">' + e[1] + '</div></div>'
+        + '</div>';
     }).join('');
   }
 
-  // --- Sample Questions ---
-  function renderSamples() {
-    const container = document.getElementById('sampleQuestions');
-    container.innerHTML = BENCHMARK_DATA.sampleQuestions.map(q => {
-      return `<div class="sample-question">
-        <div class="meta">
-          <span class="tag">${q.source}</span>
-          <span class="tag">${q.category}</span>
-          <span class="tag">${q.id}</span>
-        </div>
-        <div class="birth-info">${q.birth}</div>
-        <div class="q-text">${q.question}</div>
-        <ul class="options">
-          ${q.options.map(opt => {
-            const letter = opt.charAt(0);
-            const isCorrect = letter === q.answer;
-            return `<li class="${isCorrect ? 'correct' : ''}">${opt}${isCorrect ? ' ✓' : ''}</li>`;
-          }).join('')}
-        </ul>
-      </div>`;
-    }).join('');
+  /* ============================
+     Results Explorer
+     ============================ */
+  var PAGE_SIZE = 20;
+  var currentPage = 0;
+  var filteredQuestions = [];
+
+  function getModels() {
+    return typeof DETAIL_DATA !== 'undefined' ? DETAIL_DATA.models : [];
   }
 
-  // --- Init ---
+  function getQuestions() {
+    return typeof DETAIL_DATA !== 'undefined' ? DETAIL_DATA.questions : [];
+  }
+
+  function initExplorer() {
+    if (typeof DETAIL_DATA === 'undefined') {
+      document.getElementById('explorer').style.display = 'none';
+      return;
+    }
+
+    var models = getModels();
+    var questions = getQuestions();
+
+    // Populate model headers
+    var headerRow = document.querySelector('#explorerTable thead tr');
+    // Remove old model headers
+    var existingModelTh = document.getElementById('modelHeaders');
+    if (existingModelTh) existingModelTh.remove();
+    // Add model column headers
+    models.forEach(function(m) {
+      var th = document.createElement('th');
+      th.className = 'col-model';
+      var modeLabel = m.mode === 'fatery' ? ' (F)' : '';
+      th.innerHTML = '<span class="model-col-name">' + m.name + modeLabel + '</span>'
+        + '<span class="model-col-acc">' + (m.accuracy * 100).toFixed(1) + '%</span>';
+      headerRow.appendChild(th);
+    });
+
+    // Populate filter dropdowns
+    var sources = {};
+    var categories = {};
+    questions.forEach(function(q) {
+      sources[q.source] = (sources[q.source] || 0) + 1;
+      categories[q.category] = (categories[q.category] || 0) + 1;
+    });
+
+    var srcSelect = document.getElementById('filterSource');
+    Object.keys(sources).sort().forEach(function(s) {
+      var opt = document.createElement('option');
+      opt.value = s;
+      opt.textContent = s + ' (' + sources[s] + ')';
+      srcSelect.appendChild(opt);
+    });
+
+    var catSelect = document.getElementById('filterCategory');
+    Object.keys(categories).sort().forEach(function(c) {
+      var opt = document.createElement('option');
+      opt.value = c;
+      opt.textContent = c + ' (' + categories[c] + ')';
+      catSelect.appendChild(opt);
+    });
+
+    var modelSelect = document.getElementById('filterModel');
+    models.forEach(function(m) {
+      var opt = document.createElement('option');
+      opt.value = m.key;
+      var modeLabel = m.mode === 'fatery' ? ' (Fatery)' : '';
+      opt.textContent = m.name + modeLabel + ' — ' + (m.accuracy * 100).toFixed(1) + '%';
+      modelSelect.appendChild(opt);
+    });
+
+    // Bind filter events
+    ['filterSource', 'filterCategory', 'filterModel', 'filterCorrectness'].forEach(function(id) {
+      document.getElementById(id).addEventListener('change', function() {
+        currentPage = 0;
+        applyFilters();
+      });
+    });
+
+    applyFilters();
+  }
+
+  function applyFilters() {
+    var questions = getQuestions();
+    var models = getModels();
+    var srcVal = document.getElementById('filterSource').value;
+    var catVal = document.getElementById('filterCategory').value;
+    var modelVal = document.getElementById('filterModel').value;
+    var correctVal = document.getElementById('filterCorrectness').value;
+
+    filteredQuestions = questions.filter(function(q) {
+      if (srcVal !== 'all' && q.source !== srcVal) return false;
+      if (catVal !== 'all' && q.category !== catVal) return false;
+
+      if (correctVal === 'hard') {
+        // No model got it right
+        var anyCorrect = models.some(function(m) {
+          return q.models[m.key] && q.models[m.key].correct;
+        });
+        if (anyCorrect) return false;
+      } else if (correctVal === 'easy') {
+        // All models got it right
+        var allCorrect = models.every(function(m) {
+          return q.models[m.key] && q.models[m.key].correct;
+        });
+        if (!allCorrect) return false;
+      } else if (correctVal === 'fatery-only') {
+        // Only fatery got it right
+        var fateryCorrect = q.models['fatery'] && q.models['fatery'].correct;
+        if (!fateryCorrect) return false;
+        var othersAllWrong = models.filter(function(m) { return m.key !== 'fatery'; }).every(function(m) {
+          return !q.models[m.key] || !q.models[m.key].correct;
+        });
+        if (!othersAllWrong) return false;
+      }
+
+      if (modelVal !== 'all') {
+        // Show only questions where this specific model got it wrong (interesting cases)
+        // Actually, just show all but highlight
+      }
+
+      return true;
+    });
+
+    // Update stats
+    var statsEl = document.getElementById('filterStats');
+    statsEl.textContent = filteredQuestions.length + ' / ' + questions.length + ' questions';
+
+    renderExplorerPage();
+  }
+
+  function renderExplorerPage() {
+    var models = getModels();
+    var tbody = document.getElementById('explorerBody');
+    var start = currentPage * PAGE_SIZE;
+    var end = Math.min(start + PAGE_SIZE, filteredQuestions.length);
+    var pageQuestions = filteredQuestions.slice(start, end);
+
+    tbody.innerHTML = pageQuestions.map(function(q) {
+      var modelCells = models.map(function(m) {
+        var ans = q.models[m.key];
+        if (!ans || ans.predicted === '-') {
+          return '<td class="model-cell empty">-</td>';
+        }
+        var cls = ans.correct ? 'correct' : 'wrong';
+        return '<td class="model-cell ' + cls + '">' + ans.predicted + '</td>';
+      }).join('');
+
+      return '<tr class="explorer-row" data-qid="' + q.id + '">'
+        + '<td class="col-id">' + q.id.replace('fb_', '') + '</td>'
+        + '<td class="col-source">' + q.source.replace('HKJFMA ', "'") + '</td>'
+        + '<td class="col-cat">' + q.category + '</td>'
+        + '<td class="col-question">' + truncate(q.question, 40) + '</td>'
+        + '<td class="col-answer correct-answer">' + q.answer + '</td>'
+        + modelCells
+        + '</tr>'
+        + '<tr class="explorer-detail" id="detail-' + q.id + '" style="display:none">'
+        + '<td colspan="' + (5 + models.length) + '">'
+        + renderQuestionDetail(q, models)
+        + '</td>'
+        + '</tr>';
+    }).join('');
+
+    // Bind click to toggle detail
+    var rows = tbody.querySelectorAll('.explorer-row');
+    rows.forEach(function(row) {
+      row.addEventListener('click', function() {
+        var qid = this.getAttribute('data-qid');
+        var detail = document.getElementById('detail-' + qid);
+        if (detail) {
+          var isVisible = detail.style.display !== 'none';
+          detail.style.display = isVisible ? 'none' : 'table-row';
+          this.classList.toggle('expanded', !isVisible);
+        }
+      });
+    });
+
+    renderPagination();
+  }
+
+  function renderQuestionDetail(q, models) {
+    var optionsHtml = q.options.map(function(o) {
+      var letter = o.charAt(0);
+      var isCorrect = letter === q.answer;
+      var cls = isCorrect ? 'detail-option correct' : 'detail-option';
+      var check = isCorrect ? ' &#10003;' : '';
+      return '<div class="' + cls + '">' + o + check + '</div>';
+    }).join('');
+
+    var modelResultsHtml = models.map(function(m) {
+      var ans = q.models[m.key];
+      if (!ans || ans.predicted === '-') return '';
+      var cls = ans.correct ? 'correct' : 'wrong';
+      var modeLabel = m.mode === 'fatery' ? ' (Fatery)' : '';
+      return '<div class="detail-model-result ' + cls + '">'
+        + '<span class="detail-model-name">' + m.name + modeLabel + '</span>'
+        + '<span class="detail-model-answer">' + ans.predicted + '</span>'
+        + '<span class="detail-model-status">' + (ans.correct ? 'Correct' : 'Wrong') + '</span>'
+        + '</div>';
+    }).join('');
+
+    return '<div class="detail-content">'
+      + '<div class="detail-left">'
+      + '<div class="detail-birth">' + q.birth + '</div>'
+      + '<div class="detail-q">' + q.question + '</div>'
+      + '<div class="detail-options">' + optionsHtml + '</div>'
+      + '</div>'
+      + '<div class="detail-right">'
+      + '<div class="detail-models-title">Model Answers</div>'
+      + '<div class="detail-models-list">' + modelResultsHtml + '</div>'
+      + '</div>'
+      + '</div>';
+  }
+
+  function renderPagination() {
+    var el = document.getElementById('explorerPagination');
+    var totalPages = Math.ceil(filteredQuestions.length / PAGE_SIZE);
+    if (totalPages <= 1) {
+      el.innerHTML = '';
+      return;
+    }
+
+    var buttons = [];
+    for (var i = 0; i < totalPages; i++) {
+      var cls = i === currentPage ? 'page-btn active' : 'page-btn';
+      buttons.push('<button class="' + cls + '" data-page="' + i + '">' + (i + 1) + '</button>');
+    }
+    el.innerHTML = buttons.join('');
+
+    el.querySelectorAll('.page-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        currentPage = parseInt(this.getAttribute('data-page'));
+        renderExplorerPage();
+        document.getElementById('explorer').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  }
+
+  function truncate(str, len) {
+    return str.length > len ? str.substring(0, len) + '...' : str;
+  }
+
+  /* --- Init --- */
   renderLeaderboard();
+  renderLift();
   renderBarChart('sourceChart', BENCHMARK_DATA.dataset.sources);
   renderBarChart('categoryChart', BENCHMARK_DATA.dataset.categories);
-  renderSamples();
+  initExplorer();
 })();
 </script>
 

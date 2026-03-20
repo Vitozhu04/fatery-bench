@@ -1,20 +1,21 @@
-"""Core benchmark runner."""
+"""Core benchmark runner — evaluates by case (batch) to minimize API calls."""
 
 import json
 import random
 import time
+from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 from tqdm import tqdm
 
-from bench.evaluate import calculate_accuracy, extract_answer
+from bench.evaluate import calculate_accuracy, extract_batch_answers
 from bench.models import create_client
 from bench.models.base import ModelClient
-from bench.prompts import build_prompt, get_system_prompt
+from bench.prompts import build_batch_prompt, get_system_prompt
 
 PROJECT_ROOT = Path(__file__).parent.parent
 
@@ -22,7 +23,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 @dataclass
 class BenchmarkConfig:
     model_name: str
-    mode: str = "vanilla"
+    mode: str = "baseline"
     sample: int | None = None
     seed: int = 42
     workers: int = 4
@@ -54,15 +55,12 @@ def load_questions(config: BenchmarkConfig) -> list[dict]:
 
     questions = data["questions"]
 
-    # Filter by category
     if config.category:
         questions = [q for q in questions if q.get("category") == config.category]
 
-    # Filter by source
     if config.source:
         questions = [q for q in questions if config.source in q.get("source", "")]
 
-    # Sample
     if config.sample and config.sample < len(questions):
         rng = random.Random(config.seed)
         questions = rng.sample(questions, config.sample)
@@ -70,13 +68,22 @@ def load_questions(config: BenchmarkConfig) -> list[dict]:
     return questions
 
 
-def evaluate_question(
+def group_by_case(questions: list[dict]) -> list[list[dict]]:
+    """Group questions by case_id so each case is one API call."""
+    cases: dict[str, list[dict]] = defaultdict(list)
+    for q in questions:
+        key = q.get("case_id", q["id"])
+        cases[key].append(q)
+    return list(cases.values())
+
+
+def evaluate_case(
     client: ModelClient,
-    question: dict,
+    case_questions: list[dict],
     mode: str,
-) -> QuestionResult:
-    """Evaluate a single question."""
-    prompt = build_prompt(question, mode=mode)
+) -> list[QuestionResult]:
+    """Evaluate all questions for one case in a single API call."""
+    prompt = build_batch_prompt(case_questions, mode=mode)
     system = get_system_prompt(mode)
 
     start = time.time()
@@ -89,21 +96,29 @@ def evaluate_question(
         error = str(e)
 
     elapsed = time.time() - start
-    predicted = extract_answer(response) if not error else None
-    correct = predicted == question["answer"] if predicted else False
 
-    return QuestionResult(
-        question_id=question["id"],
-        source=question.get("source", "unknown"),
-        category=question.get("category", "unknown"),
-        question=question["question"],
-        correct_answer=question["answer"],
-        predicted_answer=predicted,
-        correct=correct,
-        response=response,
-        response_time=elapsed,
-        error=error,
-    )
+    if error:
+        answers = [None] * len(case_questions)
+    else:
+        answers = extract_batch_answers(response, len(case_questions))
+
+    results = []
+    for q, predicted in zip(case_questions, answers):
+        correct = predicted == q["answer"] if predicted else False
+        results.append(QuestionResult(
+            question_id=q["id"],
+            source=q.get("source", "unknown"),
+            category=q.get("category", "unknown"),
+            question=q["question"],
+            correct_answer=q["answer"],
+            predicted_answer=predicted,
+            correct=correct,
+            response=response,
+            response_time=round(elapsed, 2),
+            error=error,
+        ))
+
+    return results
 
 
 def run_benchmark(config: BenchmarkConfig) -> dict[str, Any]:
@@ -112,34 +127,30 @@ def run_benchmark(config: BenchmarkConfig) -> dict[str, Any]:
     if not questions:
         raise ValueError("No questions to evaluate after filtering.")
 
+    cases = group_by_case(questions)
     client = create_client(config.model_name)
     results: list[QuestionResult] = []
 
     print(f"Running FateryBench: {config.model_name} / {config.mode} mode")
-    print(f"Questions: {len(questions)} | Workers: {config.workers}")
+    print(f"Questions: {len(questions)} | Cases: {len(cases)} | Workers: {config.workers}")
     print("-" * 60)
 
     if config.workers <= 1:
-        # Sequential
-        for q in tqdm(questions, desc="Evaluating"):
-            result = evaluate_question(client, q, config.mode)
-            results.append(result)
+        for case_qs in tqdm(cases, desc="Evaluating"):
+            results.extend(evaluate_case(client, case_qs, config.mode))
     else:
-        # Concurrent
         with ThreadPoolExecutor(max_workers=config.workers) as executor:
             futures = {
-                executor.submit(evaluate_question, client, q, config.mode): q
-                for q in questions
+                executor.submit(evaluate_case, client, case_qs, config.mode): case_qs
+                for case_qs in cases
             }
             for future in tqdm(
                 as_completed(futures), total=len(futures), desc="Evaluating"
             ):
-                results.append(future.result())
+                results.extend(future.result())
 
-    # Sort by question_id for deterministic output
     results.sort(key=lambda r: r.question_id)
 
-    # Calculate metrics
     result_dicts = [
         {
             "question_id": r.question_id,
@@ -149,7 +160,8 @@ def run_benchmark(config: BenchmarkConfig) -> dict[str, Any]:
             "correct_answer": r.correct_answer,
             "predicted_answer": r.predicted_answer,
             "correct": r.correct,
-            "response_time": round(r.response_time, 2),
+            "response": r.response,
+            "response_time": r.response_time,
             "error": r.error,
         }
         for r in results
@@ -159,7 +171,7 @@ def run_benchmark(config: BenchmarkConfig) -> dict[str, Any]:
 
     output = {
         "benchmark": "FateryBench",
-        "version": "1.0",
+        "version": "1.1",
         "model": config.model_name,
         "mode": config.mode,
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -174,7 +186,6 @@ def run_benchmark(config: BenchmarkConfig) -> dict[str, Any]:
         "results": result_dicts,
     }
 
-    # Save results
     out_dir = PROJECT_ROOT / config.output_dir
     out_dir.mkdir(parents=True, exist_ok=True)
     safe_model = config.model_name.replace("/", "_")

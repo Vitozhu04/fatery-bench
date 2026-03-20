@@ -1,12 +1,20 @@
 """CLI entry point: python -m bench [options]"""
 
+from pathlib import Path
+
 import click
+from dotenv import load_dotenv
 
 from bench.runner import BenchmarkConfig, run_benchmark
 
+# Load .env.local (then .env) from project root
+_root = Path(__file__).parent.parent
+load_dotenv(_root / ".env.local")
+load_dotenv(_root / ".env")
+
 
 @click.command()
-@click.option("--model", required=True, help="Model name (e.g., gemini-3-flash, gpt-5.3)")
+@click.option("--model", required=True, help="Model name (e.g., gemini-2.5-flash, gpt-4o)")
 @click.option("--mode", default="baseline", type=click.Choice(["baseline", "fatery"]))
 @click.option("--sample", default=None, type=int, help="Number of questions to sample")
 @click.option("--seed", default=42, type=int)
