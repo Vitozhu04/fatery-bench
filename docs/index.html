@@ -1,37 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FateryBench — Chinese Metaphysics LLM Benchmark</title>
-  <meta name="description" content="Benchmark for evaluating LLMs on Chinese metaphysics (BaZi) prediction. 196 competition questions from HKJFMA 2022-2025.">
+  <title>FateryBench — AI算命大模型测评</title>
+  <meta name="description" content="FateryBench：首个八字命理大模型测评基准。196道香港风水比赛真题（HKJFMA 2022-2025），看哪个AI最准。">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Language Toggle -->
+<div class="lang-toggle">
+  <button class="lang-btn active" data-lang="zh">中文</button>
+  <button class="lang-btn" data-lang="en">EN</button>
+</div>
 
 <header class="hero">
   <div class="container">
     <h1>FateryBench</h1>
     <p class="subtitle">
-      Can AI master the Four Pillars of Destiny?<br>
-      The first benchmark for Chinese metaphysics prediction.
+      <span data-i18n="subtitle">AI能算命吗？首个八字命理大模型测评基准。</span>
     </p>
+    <a href="https://fatery.me" target="_blank" class="cta-banner">
+      <span class="cta-icon">✦</span>
+      <span class="cta-text">
+        <strong data-i18n="cta_title">想试试 AI 算命？</strong>
+        <span class="cta-sub" data-i18n="cta_sub">来 Fatery.me 体验专业八字命理分析</span>
+      </span>
+      <span class="cta-arrow">→</span>
+    </a>
     <div class="stats-row">
       <div class="stat">
         <div class="number">196</div>
-        <div class="label">Questions</div>
+        <div class="label" data-i18n="stat_questions">道真题</div>
       </div>
       <div class="stat">
         <div class="number">9</div>
-        <div class="label">Models</div>
+        <div class="label" data-i18n="stat_models">个模型</div>
       </div>
       <div class="stat">
         <div class="number">12</div>
-        <div class="label">Categories</div>
+        <div class="label" data-i18n="stat_categories">个分类</div>
       </div>
       <div class="stat">
         <div class="number">60%</div>
-        <div class="label">Human Top 3</div>
+        <div class="label" data-i18n="stat_human">人类 Top 3</div>
       </div>
     </div>
   </div>
@@ -43,24 +56,24 @@
   <section id="finding">
     <div class="findings-grid">
       <div class="finding-card">
-        <div class="finding-label">Best AI</div>
+        <div class="finding-label" data-i18n="finding_best_ai_label">最强 AI</div>
         <div class="finding-stat">43.9%</div>
-        <div class="finding-desc">Fatery (Gemini 3 Flash + prompt engineering + pre-computed BaZi chart)</div>
+        <div class="finding-desc" data-i18n="finding_best_ai_desc">Fatery（Gemini 3 Flash + 专业提示词 + 预排八字命盘）</div>
       </div>
       <div class="finding-card">
-        <div class="finding-label">Human Top 3</div>
+        <div class="finding-label" data-i18n="finding_human_label">人类 Top 3</div>
         <div class="finding-stat blue">60.0%</div>
-        <div class="finding-desc">HKJFMA 2024 competition 3rd place. AI still 16% behind human experts.</div>
+        <div class="finding-desc" data-i18n="finding_human_desc">HKJFMA 2024 竞赛第三名。AI 距离人类专家还差 16%。</div>
       </div>
       <div class="finding-card">
-        <div class="finding-label">Fatery Effect</div>
+        <div class="finding-label" data-i18n="finding_fatery_label">Fatery 效果</div>
         <div class="finding-stat green">+13.8%</div>
-        <div class="finding-desc">Prompt engineering + chart data lifts Gemini 3 Flash from 30.1% to 43.9%.</div>
+        <div class="finding-desc" data-i18n="finding_fatery_desc">专业提示词 + 预排命盘将 Gemini 3 Flash 从 30.1% 提升至 43.9%。</div>
       </div>
       <div class="finding-card">
-        <div class="finding-label">Best Baseline</div>
+        <div class="finding-label" data-i18n="finding_baseline_label">最强裸测</div>
         <div class="finding-stat dim">38.3%</div>
-        <div class="finding-desc">GPT-5.4 without any prompt engineering. All baselines cluster 30-38%.</div>
+        <div class="finding-desc" data-i18n="finding_baseline_desc">GPT-5.4 无任何提示工程。所有裸测模型聚集在 30-38%。</div>
       </div>
     </div>
   </section>
@@ -69,20 +82,20 @@
 
   <!-- Leaderboard -->
   <section id="leaderboard">
-    <h2 class="section-title">Leaderboard</h2>
-    <p class="section-note">
-      Scored on 196 HKJFMA competition questions (2022-2025). Celebrity cases excluded due to data contamination.
-      Human reference: HKJFMA 2024 3rd place = 60% (source: <a href="https://arxiv.org/abs/2510.23337" target="_blank">arXiv:2510.23337</a>). Random baseline = 25%.
+    <h2 class="section-title" data-i18n="leaderboard_title">排行榜</h2>
+    <p class="section-note" data-i18n="leaderboard_note">
+      基于 196 道 HKJFMA 风水比赛真题（2022-2025）。名人案例因数据污染已排除。
+      人类参考：HKJFMA 2024 第三名 = 60%（来源：<a href="https://arxiv.org/abs/2510.23337" target="_blank">arXiv:2510.23337</a>）。随机猜测 = 25%。
     </p>
     <table class="leaderboard-table" id="leaderboardTable">
       <thead>
         <tr>
-          <th>Rank</th>
-          <th>Model</th>
-          <th>Provider</th>
-          <th>Approach</th>
-          <th>Accuracy</th>
-          <th>Score</th>
+          <th data-i18n="th_rank">排名</th>
+          <th data-i18n="th_model">模型</th>
+          <th data-i18n="th_provider">提供商</th>
+          <th data-i18n="th_approach">方式</th>
+          <th data-i18n="th_accuracy">准确率</th>
+          <th data-i18n="th_score">得分</th>
         </tr>
       </thead>
       <tbody id="leaderboardBody"></tbody>
@@ -93,10 +106,10 @@
 
   <!-- Fatery Lift -->
   <section id="lift">
-    <h2 class="section-title">The Fatery Effect</h2>
-    <p class="section-note">
-      Same model (Gemini 3 Flash), same questions.
-      Fatery adds a professional system prompt and pre-computed BaZi chart data — four pillars and Da Yun cycles calculated by a deterministic algorithm.
+    <h2 class="section-title" data-i18n="lift_title">Fatery 效果</h2>
+    <p class="section-note" data-i18n="lift_note">
+      同一模型（Gemini 3 Flash），同样的题目。
+      Fatery 加入专业系统提示词和预排八字命盘数据 — 四柱八字和大运由算法精确排出。
     </p>
     <div class="lift-card" id="liftCard"></div>
   </section>
@@ -105,38 +118,38 @@
 
   <!-- Results Explorer -->
   <section id="explorer">
-    <h2 class="section-title">Results Explorer</h2>
-    <p class="section-note">
-      Browse every question and see how each model answered. Click a row to expand the full case.
+    <h2 class="section-title" data-i18n="explorer_title">逐题查看</h2>
+    <p class="section-note" data-i18n="explorer_note">
+      浏览每一道题目，查看各模型的答案。点击行可展开完整命例。
     </p>
 
     <!-- Filters -->
     <div class="explorer-filters">
       <div class="filter-group">
-        <label>Source</label>
+        <label data-i18n="filter_source">来源</label>
         <select id="filterSource">
-          <option value="all">All Sources</option>
+          <option value="all" data-i18n="filter_all_sources">全部来源</option>
         </select>
       </div>
       <div class="filter-group">
-        <label>Category</label>
+        <label data-i18n="filter_category">分类</label>
         <select id="filterCategory">
-          <option value="all">All Categories</option>
+          <option value="all" data-i18n="filter_all_categories">全部分类</option>
         </select>
       </div>
       <div class="filter-group">
-        <label>Model Focus</label>
+        <label data-i18n="filter_model">模型</label>
         <select id="filterModel">
-          <option value="all">All Models</option>
+          <option value="all" data-i18n="filter_all_models">全部模型</option>
         </select>
       </div>
       <div class="filter-group">
-        <label>Show</label>
+        <label data-i18n="filter_show">筛选</label>
         <select id="filterCorrectness">
-          <option value="all">All Questions</option>
-          <option value="hard">Hardest (no model correct)</option>
-          <option value="easy">Easiest (all models correct)</option>
-          <option value="fatery-only">Only Fatery correct</option>
+          <option value="all" data-i18n="filter_all_q">全部题目</option>
+          <option value="hard" data-i18n="filter_hard">最难（无模型答对）</option>
+          <option value="easy" data-i18n="filter_easy">最简单（全部答对）</option>
+          <option value="fatery-only" data-i18n="filter_fatery_only">仅 Fatery 答对</option>
         </select>
       </div>
       <div class="filter-stats" id="filterStats"></div>
@@ -148,10 +161,10 @@
         <thead>
           <tr>
             <th class="col-id">ID</th>
-            <th class="col-source">Source</th>
-            <th class="col-cat">Category</th>
-            <th class="col-question">Question</th>
-            <th class="col-answer">Answer</th>
+            <th class="col-source" data-i18n="col_source">来源</th>
+            <th class="col-cat" data-i18n="col_category">分类</th>
+            <th class="col-question" data-i18n="col_question">题目</th>
+            <th class="col-answer" data-i18n="col_answer">答案</th>
             <th class="col-models" id="modelHeaders"></th>
           </tr>
         </thead>
@@ -166,11 +179,11 @@
 
   <!-- How it works -->
   <section id="approach">
-    <h2 class="section-title">Baseline vs. Fatery</h2>
+    <h2 class="section-title" data-i18n="approach_title">裸测 vs. Fatery</h2>
     <div class="approach-grid">
       <div class="approach-card">
-        <h3>Baseline</h3>
-        <p class="desc">Simple prompt — the model must calculate everything from scratch.</p>
+        <h3 data-i18n="approach_baseline">裸测（Baseline）</h3>
+        <p class="desc" data-i18n="approach_baseline_desc">简单提示词 — 模型需要自行排盘计算一切。</p>
         <div class="code-block muted">
           System: 你是一位八字分析师<br><br>
           命主信息：男命 1974年4月28日…<br>
@@ -181,15 +194,15 @@
       </div>
       <div class="approach-card">
         <h3>Fatery</h3>
-        <p class="desc">Production prompt from Fatery.me — structured analysis with pre-computed chart.</p>
+        <p class="desc" data-i18n="approach_fatery_desc">Fatery.me 的生产级提示词 — 结构化分析 + 预排命盘。</p>
         <div class="code-block accent">
           System: 命运精算师 — 4-step protocol<br>
           ├ STEP 1  命盘分析（日主·强弱·用神·忌神）<br>
           ├ STEP 2  宏观周期弧（大运）<br>
           ├ STEP 3  针对性分析（冲合刑害）<br>
           └ STEP 4  选项评估<br><br>
-          + Pre-computed 四柱八字 via lunar-python<br>
-          + Pre-computed 大运 (8 decade cycles)
+          + 预排四柱八字 via lunar-python<br>
+          + 预排大运（8组十年大运）
         </div>
       </div>
     </div>
@@ -199,17 +212,17 @@
 
   <!-- Dataset -->
   <section id="dataset">
-    <h2 class="section-title">Dataset</h2>
-    <p class="section-note">
-      196 multiple-choice questions from four years of HKJFMA (Hong Kong Junior Feng Shui Masters Association) competitions across 12 categories.
+    <h2 class="section-title" data-i18n="dataset_title">数据集</h2>
+    <p class="section-note" data-i18n="dataset_note">
+      196 道四选一题目，来自四年 HKJFMA（香港青年风水师协会）比赛，涵盖 12 个分类。
     </p>
     <div class="charts-grid">
       <div class="chart-card">
-        <h3>By Source</h3>
+        <h3 data-i18n="chart_by_source">按年份</h3>
         <div class="bar-chart" id="sourceChart"></div>
       </div>
       <div class="chart-card">
-        <h3>By Category</h3>
+        <h3 data-i18n="chart_by_category">按分类</h3>
         <div class="bar-chart" id="categoryChart"></div>
       </div>
     </div>
@@ -221,7 +234,7 @@
   <div class="container">
     <p>
       FateryBench by <a href="https://fatery.me" target="_blank">Fatery.me</a>
-      &middot; Data from public HKJFMA competitions (2022-2025)
+      &middot; <span data-i18n="footer_data">数据来源：HKJFMA 公开竞赛（2022-2025）</span>
       &middot; <a href="https://github.com/Vitozhu04/fatery-bench" target="_blank">GitHub</a>
     </p>
   </div>
@@ -233,13 +246,181 @@
 (function() {
   'use strict';
 
+  /* ============================
+     i18n
+     ============================ */
+  var currentLang = 'zh';
+
+  var translations = {
+    en: {
+      subtitle: "Can AI master the Four Pillars of Destiny? The first benchmark for Chinese metaphysics prediction.",
+      cta_title: "Want to try AI fortune-telling?",
+      cta_sub: "Try professional BaZi analysis at Fatery.me",
+      stat_questions: "Questions",
+      stat_models: "Models",
+      stat_categories: "Categories",
+      stat_human: "Human Top 3",
+      finding_best_ai_label: "Best AI",
+      finding_best_ai_desc: "Fatery (Gemini 3 Flash + prompt engineering + pre-computed BaZi chart)",
+      finding_human_label: "Human Top 3",
+      finding_human_desc: "HKJFMA 2024 competition 3rd place. AI still 16% behind human experts.",
+      finding_fatery_label: "Fatery Effect",
+      finding_fatery_desc: "Prompt engineering + chart data lifts Gemini 3 Flash from 30.1% to 43.9%.",
+      finding_baseline_label: "Best Baseline",
+      finding_baseline_desc: "GPT-5.4 without any prompt engineering. All baselines cluster 30-38%.",
+      leaderboard_title: "Leaderboard",
+      leaderboard_note: 'Scored on 196 HKJFMA competition questions (2022-2025). Celebrity cases excluded due to data contamination. Human reference: HKJFMA 2024 3rd place = 60% (source: <a href="https://arxiv.org/abs/2510.23337" target="_blank">arXiv:2510.23337</a>). Random baseline = 25%.',
+      th_rank: "Rank",
+      th_model: "Model",
+      th_provider: "Provider",
+      th_approach: "Approach",
+      th_accuracy: "Accuracy",
+      th_score: "Score",
+      lift_title: "The Fatery Effect",
+      lift_note: "Same model (Gemini 3 Flash), same questions. Fatery adds a professional system prompt and pre-computed BaZi chart data — four pillars and Da Yun cycles calculated by a deterministic algorithm.",
+      explorer_title: "Results Explorer",
+      explorer_note: "Browse every question and see how each model answered. Click a row to expand the full case.",
+      filter_source: "Source",
+      filter_all_sources: "All Sources",
+      filter_category: "Category",
+      filter_all_categories: "All Categories",
+      filter_model: "Model Focus",
+      filter_all_models: "All Models",
+      filter_show: "Show",
+      filter_all_q: "All Questions",
+      filter_hard: "Hardest (no model correct)",
+      filter_easy: "Easiest (all models correct)",
+      filter_fatery_only: "Only Fatery correct",
+      col_source: "Source",
+      col_category: "Category",
+      col_question: "Question",
+      col_answer: "Answer",
+      approach_title: "Baseline vs. Fatery",
+      approach_baseline: "Baseline",
+      approach_baseline_desc: "Simple prompt — the model must calculate everything from scratch.",
+      approach_fatery_desc: "Production prompt from Fatery.me — structured analysis with pre-computed chart.",
+      dataset_title: "Dataset",
+      dataset_note: "196 multiple-choice questions from four years of HKJFMA (Hong Kong Junior Feng Shui Masters Association) competitions across 12 categories.",
+      chart_by_source: "By Source",
+      chart_by_category: "By Category",
+      footer_data: "Data from public HKJFMA competitions (2022-2025)",
+      // Leaderboard dynamic
+      approach_competition: "Competition",
+      approach_random: "Random",
+      approach_prompt_chart: "Prompt + Chart",
+      approach_baseline_label: "Baseline",
+      // Explorer dynamic
+      detail_model_answers: "Model Answers",
+      detail_correct: "Correct",
+      detail_wrong: "Wrong",
+      questions_suffix: "questions",
+    },
+    zh: {
+      subtitle: "AI能算命吗？首个八字命理大模型测评基准。",
+      cta_title: "想试试 AI 算命？",
+      cta_sub: "来 Fatery.me 体验专业八字命理分析",
+      stat_questions: "道真题",
+      stat_models: "个模型",
+      stat_categories: "个分类",
+      stat_human: "人类 Top 3",
+      finding_best_ai_label: "最强 AI",
+      finding_best_ai_desc: "Fatery（Gemini 3 Flash + 专业提示词 + 预排八字命盘）",
+      finding_human_label: "人类 Top 3",
+      finding_human_desc: "HKJFMA 2024 竞赛第三名。AI 距离人类专家还差 16%。",
+      finding_fatery_label: "Fatery 效果",
+      finding_fatery_desc: "专业提示词 + 预排命盘将 Gemini 3 Flash 从 30.1% 提升至 43.9%。",
+      finding_baseline_label: "最强裸测",
+      finding_baseline_desc: "GPT-5.4 无任何提示工程。所有裸测模型聚集在 30-38%。",
+      leaderboard_title: "排行榜",
+      leaderboard_note: '基于 196 道 HKJFMA 风水比赛真题（2022-2025）。名人案例因数据污染已排除。人类参考：HKJFMA 2024 第三名 = 60%（来源：<a href="https://arxiv.org/abs/2510.23337" target="_blank">arXiv:2510.23337</a>）。随机猜测 = 25%。',
+      th_rank: "排名",
+      th_model: "模型",
+      th_provider: "提供商",
+      th_approach: "方式",
+      th_accuracy: "准确率",
+      th_score: "得分",
+      lift_title: "Fatery 效果",
+      lift_note: "同一模型（Gemini 3 Flash），同样的题目。Fatery 加入专业系统提示词和预排八字命盘数据 — 四柱八字和大运由算法精确排出。",
+      explorer_title: "逐题查看",
+      explorer_note: "浏览每一道题目，查看各模型的答案。点击行可展开完整命例。",
+      filter_source: "来源",
+      filter_all_sources: "全部来源",
+      filter_category: "分类",
+      filter_all_categories: "全部分类",
+      filter_model: "模型",
+      filter_all_models: "全部模型",
+      filter_show: "筛选",
+      filter_all_q: "全部题目",
+      filter_hard: "最难（无模型答对）",
+      filter_easy: "最简单（全部答对）",
+      filter_fatery_only: "仅 Fatery 答对",
+      col_source: "来源",
+      col_category: "分类",
+      col_question: "题目",
+      col_answer: "答案",
+      approach_title: "裸测 vs. Fatery",
+      approach_baseline: "裸测（Baseline）",
+      approach_baseline_desc: "简单提示词 — 模型需要自行排盘计算一切。",
+      approach_fatery_desc: "Fatery.me 的生产级提示词 — 结构化分析 + 预排命盘。",
+      dataset_title: "数据集",
+      dataset_note: "196 道四选一题目，来自四年 HKJFMA（香港青年风水师协会）比赛，涵盖 12 个分类。",
+      chart_by_source: "按年份",
+      chart_by_category: "按分类",
+      footer_data: "数据来源：HKJFMA 公开竞赛（2022-2025）",
+      approach_competition: "竞赛",
+      approach_random: "随机",
+      approach_prompt_chart: "提示词+命盘",
+      approach_baseline_label: "裸测",
+      detail_model_answers: "模型答案",
+      detail_correct: "正确",
+      detail_wrong: "错误",
+      questions_suffix: "题",
+    }
+  };
+
+  function t(key) {
+    return (translations[currentLang] && translations[currentLang][key]) || key;
+  }
+
+  function applyLanguage() {
+    // Update all data-i18n elements
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      var val = translations[currentLang][key];
+      if (val) el.innerHTML = val;
+    });
+
+    // Update page title and meta
+    document.title = currentLang === 'zh'
+      ? 'FateryBench — AI算命大模型测评'
+      : 'FateryBench — Chinese Metaphysics LLM Benchmark';
+    document.documentElement.lang = currentLang === 'zh' ? 'zh' : 'en';
+
+    // Re-render dynamic content
+    renderLeaderboard();
+    renderLift();
+    renderExplorerPage();
+  }
+
+  // Language toggle buttons
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = this.getAttribute('data-lang');
+      if (lang === currentLang) return;
+      currentLang = lang;
+      document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      applyLanguage();
+    });
+  });
+
   /* --- Leaderboard --- */
   function renderLeaderboard() {
     var tbody = document.getElementById('leaderboardBody');
     var rows = BENCHMARK_DATA.results.slice().sort(function(a, b) { return b.accuracy - a.accuracy; });
 
     var modelRank = 0;
-    tbody.innerHTML = rows.map(function(r, i) {
+    tbody.innerHTML = rows.map(function(r) {
       var isHuman = r.isHuman;
       var isRandom = r.isRandom;
       var isRef = isHuman || isRandom;
@@ -251,7 +432,7 @@
       var badge = r.isFatery ? '<span class="fatery-badge">Fatery</span>' : '';
       var humanBadge = isHuman ? '<span class="human-badge">Human</span>' : '';
       var randomBadge = isRandom ? '<span class="random-badge">Baseline</span>' : '';
-      var approach = isHuman ? 'Competition' : (isRandom ? 'Random' : (r.isFatery ? 'Prompt + Chart' : 'Baseline'));
+      var approach = isHuman ? t('approach_competition') : (isRandom ? t('approach_random') : (r.isFatery ? t('approach_prompt_chart') : t('approach_baseline_label')));
       var note = r.note ? ' <span class="note-icon" title="' + r.note + '">&#9888;</span>' : '';
       var rowClass = isHuman ? 'human-row' : (isRandom ? 'random-row' : '');
       var scoreStr = r.correct + ' / ' + r.total;
@@ -281,7 +462,7 @@
 
     card.innerHTML = '<div class="lift-header">'
       + '<span class="lift-model">' + d.model + '</span>'
-      + '<span class="lift-sub">on ' + d.total + ' competition questions</span>'
+      + '<span class="lift-sub">' + d.total + ' ' + t('questions_suffix') + '</span>'
       + '</div>'
       + '<div class="lift-bars">'
       + '<div class="lift-row">'
@@ -346,10 +527,8 @@
 
     // Populate model headers
     var headerRow = document.querySelector('#explorerTable thead tr');
-    // Remove old model headers
     var existingModelTh = document.getElementById('modelHeaders');
     if (existingModelTh) existingModelTh.remove();
-    // Add model column headers
     models.forEach(function(m) {
       var th = document.createElement('th');
       th.className = 'col-model';
@@ -392,7 +571,6 @@
       modelSelect.appendChild(opt);
     });
 
-    // Bind filter events
     ['filterSource', 'filterCategory', 'filterModel', 'filterCorrectness'].forEach(function(id) {
       document.getElementById(id).addEventListener('change', function() {
         currentPage = 0;
@@ -416,19 +594,16 @@
       if (catVal !== 'all' && q.category !== catVal) return false;
 
       if (correctVal === 'hard') {
-        // No model got it right
         var anyCorrect = models.some(function(m) {
           return q.models[m.key] && q.models[m.key].correct;
         });
         if (anyCorrect) return false;
       } else if (correctVal === 'easy') {
-        // All models got it right
         var allCorrect = models.every(function(m) {
           return q.models[m.key] && q.models[m.key].correct;
         });
         if (!allCorrect) return false;
       } else if (correctVal === 'fatery-only') {
-        // Only fatery got it right
         var fateryCorrect = q.models['fatery'] && q.models['fatery'].correct;
         if (!fateryCorrect) return false;
         var othersAllWrong = models.filter(function(m) { return m.key !== 'fatery'; }).every(function(m) {
@@ -437,17 +612,11 @@
         if (!othersAllWrong) return false;
       }
 
-      if (modelVal !== 'all') {
-        // Show only questions where this specific model got it wrong (interesting cases)
-        // Actually, just show all but highlight
-      }
-
       return true;
     });
 
-    // Update stats
     var statsEl = document.getElementById('filterStats');
-    statsEl.textContent = filteredQuestions.length + ' / ' + questions.length + ' questions';
+    statsEl.textContent = filteredQuestions.length + ' / ' + questions.length + ' ' + t('questions_suffix');
 
     renderExplorerPage();
   }
@@ -455,6 +624,7 @@
   function renderExplorerPage() {
     var models = getModels();
     var tbody = document.getElementById('explorerBody');
+    if (!tbody) return;
     var start = currentPage * PAGE_SIZE;
     var end = Math.min(start + PAGE_SIZE, filteredQuestions.length);
     var pageQuestions = filteredQuestions.slice(start, end);
@@ -484,7 +654,6 @@
         + '</tr>';
     }).join('');
 
-    // Bind click to toggle detail
     var rows = tbody.querySelectorAll('.explorer-row');
     rows.forEach(function(row) {
       row.addEventListener('click', function() {
@@ -518,7 +687,7 @@
       return '<div class="detail-model-result ' + cls + '">'
         + '<span class="detail-model-name">' + m.name + modeLabel + '</span>'
         + '<span class="detail-model-answer">' + ans.predicted + '</span>'
-        + '<span class="detail-model-status">' + (ans.correct ? 'Correct' : 'Wrong') + '</span>'
+        + '<span class="detail-model-status">' + (ans.correct ? t('detail_correct') : t('detail_wrong')) + '</span>'
         + '</div>';
     }).join('');
 
@@ -529,7 +698,7 @@
       + '<div class="detail-options">' + optionsHtml + '</div>'
       + '</div>'
       + '<div class="detail-right">'
-      + '<div class="detail-models-title">Model Answers</div>'
+      + '<div class="detail-models-title">' + t('detail_model_answers') + '</div>'
       + '<div class="detail-models-list">' + modelResultsHtml + '</div>'
       + '</div>'
       + '</div>';
