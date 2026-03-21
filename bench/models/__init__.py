@@ -13,6 +13,7 @@ MODEL_REGISTRY: dict[str, type[ModelClient]] = {
     "gpt-5.4": OpenAIClient,
     "gpt-5.3-chat-latest": OpenAIClient,
     "deepseek-reasoner": DeepSeekClient,
+    "deepseek-chat": DeepSeekClient,
 }
 
 # Fatery = gemini-3-flash-preview + fatery-enhanced prompt

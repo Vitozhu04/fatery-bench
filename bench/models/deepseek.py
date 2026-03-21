@@ -17,6 +17,8 @@ _RETRY_DELAY = 5  # seconds
 
 class DeepSeekClient(ModelClient):
 
+    DEEPSEEK_MAX_TOKENS = 8192
+
     def _get_api_key(self) -> str:
         return self._env_key("DEEPSEEK_API_KEY")
 
@@ -36,7 +38,7 @@ class DeepSeekClient(ModelClient):
             kwargs: dict = {
                 "model": self.model_name,
                 "messages": messages,
-                "max_tokens": self.DEFAULT_MAX_TOKENS,
+                "max_tokens": self.DEEPSEEK_MAX_TOKENS,
             }
         else:
             messages = [
@@ -47,7 +49,7 @@ class DeepSeekClient(ModelClient):
                 "model": self.model_name,
                 "messages": messages,
                 "temperature": self.DEFAULT_TEMPERATURE,
-                "max_tokens": self.DEFAULT_MAX_TOKENS,
+                "max_tokens": self.DEEPSEEK_MAX_TOKENS,
             }
 
         for attempt in range(_MAX_RETRIES):

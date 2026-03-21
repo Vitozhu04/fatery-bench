@@ -78,6 +78,18 @@ MODELS = {
         "provider": "OpenAI",
         "mode": "fatery",
     },
+    "deepseek-chat_baseline.json": {
+        "key": "dsv3",
+        "name": "DeepSeek V3",
+        "provider": "DeepSeek",
+        "mode": "baseline",
+    },
+    "deepseek-reasoner_baseline.json": {
+        "key": "dsr1",
+        "name": "DeepSeek R1",
+        "provider": "DeepSeek",
+        "mode": "baseline",
+    },
 }
 
 

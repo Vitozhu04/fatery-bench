@@ -1,6 +1,6 @@
 /**
  * FateryBench per-question detail data.
- * Generated from 10 model results.
+ * Generated from 12 model results.
  * 196 competition questions.
  */
 
@@ -52,6 +52,15 @@ const DETAIL_DATA = {
       "accuracy": 0.3571
     },
     {
+      "key": "dsv3",
+      "name": "DeepSeek V3",
+      "provider": "DeepSeek",
+      "mode": "baseline",
+      "correct": 68,
+      "total": 196,
+      "accuracy": 0.3469
+    },
+    {
       "key": "gpt53",
       "name": "GPT-5.3",
       "provider": "OpenAI",
@@ -59,6 +68,15 @@ const DETAIL_DATA = {
       "correct": 67,
       "total": 196,
       "accuracy": 0.3418
+    },
+    {
+      "key": "dsr1",
+      "name": "DeepSeek R1",
+      "provider": "DeepSeek",
+      "mode": "baseline",
+      "correct": 66,
+      "total": 196,
+      "accuracy": 0.3367
     },
     {
       "key": "gemini31pro",
@@ -153,6 +171,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -209,6 +235,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -269,6 +303,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": true
         }
       }
     },
@@ -327,6 +369,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": true
         }
       }
     },
@@ -385,6 +435,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -443,6 +501,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -499,6 +565,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": true
         }
@@ -559,6 +633,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -617,6 +699,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -673,6 +763,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": true
         }
@@ -733,6 +831,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": true
         }
       }
     },
@@ -789,6 +895,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": false
         }
@@ -849,6 +963,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": true
         }
       }
     },
@@ -907,6 +1029,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -963,6 +1093,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -1023,6 +1161,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -1081,6 +1227,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -1139,6 +1293,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -1197,6 +1359,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -1255,6 +1425,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": true
         }
       }
     },
@@ -1313,6 +1491,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -1369,6 +1555,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": true
         }
@@ -1429,6 +1623,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -1485,6 +1687,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -1545,6 +1755,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -1601,6 +1819,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -1661,6 +1887,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -1717,6 +1951,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -1777,6 +2019,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -1835,6 +2085,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -1893,6 +2151,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -1949,6 +2215,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": true
         }
@@ -2009,6 +2283,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -2067,6 +2349,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": true
         }
       }
     },
@@ -2125,6 +2415,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -2183,6 +2481,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -2241,6 +2547,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": true
         }
       }
     },
@@ -2297,6 +2611,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "A",
           "correct": false
         }
@@ -2357,6 +2679,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -2413,6 +2743,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -2473,6 +2811,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -2531,6 +2877,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": true
         }
       }
     },
@@ -2587,6 +2941,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -2647,6 +3009,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -2703,6 +3073,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": true
         }
@@ -2763,6 +3141,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -2821,6 +3207,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -2877,6 +3271,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "A",
           "correct": false
         }
@@ -2937,6 +3339,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -2993,6 +3403,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -3053,6 +3471,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -3111,6 +3537,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": true
         }
       }
     },
@@ -3167,6 +3601,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": true
         }
@@ -3227,6 +3669,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -3285,6 +3735,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": true
         }
       }
     },
@@ -3341,6 +3799,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": false
         }
@@ -3401,6 +3867,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -3457,6 +3931,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -3517,6 +3999,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -3575,6 +4065,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -3633,6 +4131,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -3691,6 +4197,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -3747,6 +4261,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": true
         }
@@ -3807,6 +4329,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -3865,6 +4395,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -3922,6 +4460,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
           "correct": false
         }
       }
@@ -3981,6 +4527,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -4037,6 +4591,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": true
         }
@@ -4097,6 +4659,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -4153,6 +4723,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -4213,6 +4791,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -4269,6 +4855,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "A",
           "correct": false
         }
@@ -4329,6 +4923,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -4385,6 +4987,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": true
         }
@@ -4445,6 +5055,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -4503,6 +5121,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -4559,6 +5185,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -4619,6 +5253,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -4677,6 +5319,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -4735,6 +5385,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -4791,6 +5449,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": true
         }
@@ -4851,6 +5517,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -4907,6 +5581,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -4967,6 +5649,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -5024,6 +5714,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
           "correct": false
         }
       }
@@ -5083,6 +5781,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": true
         }
       }
     },
@@ -5139,6 +5845,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": true
         }
@@ -5199,6 +5913,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": true
         }
       }
     },
@@ -5257,6 +5979,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -5315,6 +6045,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -5373,6 +6111,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -5429,6 +6175,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "A",
           "correct": true
         }
@@ -5489,6 +6243,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -5545,6 +6307,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -5605,6 +6375,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": true
         }
       }
     },
@@ -5661,6 +6439,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": true
         }
@@ -5721,6 +6507,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -5777,6 +6571,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": false
         }
@@ -5837,6 +6639,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -5893,6 +6703,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -5953,6 +6771,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -6009,6 +6835,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -6069,6 +6903,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": true
         }
       }
     },
@@ -6125,6 +6967,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": true
         }
@@ -6185,6 +7035,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -6242,6 +7100,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
           "correct": false
         }
       }
@@ -6301,6 +7167,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -6357,6 +7231,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -6417,6 +7299,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -6475,6 +7365,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -6533,6 +7431,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": null,
+          "correct": false
         }
       }
     },
@@ -6590,6 +7496,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": null,
           "correct": false
         }
       }
@@ -6649,6 +7563,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": null,
+          "correct": false
         }
       }
     },
@@ -6707,6 +7629,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": null,
+          "correct": false
         }
       }
     },
@@ -6764,6 +7694,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": null,
           "correct": false
         }
       }
@@ -6823,6 +7761,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -6879,6 +7825,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -6939,6 +7893,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -6995,6 +7957,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -7055,6 +8025,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -7113,6 +8091,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -7169,6 +8155,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -7229,6 +8223,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -7286,6 +8288,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
           "correct": false
         }
       }
@@ -7345,6 +8355,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -7401,6 +8419,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": true
         }
@@ -7461,6 +8487,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -7517,6 +8551,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -7577,6 +8619,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -7635,6 +8685,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -7692,6 +8750,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
           "correct": false
         }
       }
@@ -7751,6 +8817,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -7807,6 +8881,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -7867,6 +8949,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -7925,6 +9015,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -7981,6 +9079,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -8041,6 +9147,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -8097,6 +9211,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -8157,6 +9279,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -8215,6 +9345,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -8271,6 +9409,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": true
         }
@@ -8331,6 +9477,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -8389,6 +9543,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": true
         }
       }
     },
@@ -8447,6 +9609,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -8505,6 +9675,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -8563,6 +9741,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -8619,6 +9805,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -8679,6 +9873,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -8737,6 +9939,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -8793,6 +10003,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": false
         }
@@ -8853,6 +10071,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": false
         }
       }
     },
@@ -8909,6 +10135,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": false
         }
@@ -8969,6 +10203,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -9025,6 +10267,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -9085,6 +10335,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -9141,6 +10399,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": true
         }
@@ -9201,6 +10467,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -9258,6 +10532,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "A",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
           "correct": false
         }
       }
@@ -9317,6 +10599,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": true
         }
       }
     },
@@ -9373,6 +10663,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "A",
           "correct": true
         }
@@ -9433,6 +10731,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": null,
+          "correct": false
         }
       }
     },
@@ -9490,6 +10796,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": null,
           "correct": false
         }
       }
@@ -9549,6 +10863,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": null,
+          "correct": false
         }
       }
     },
@@ -9606,6 +10928,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": null,
           "correct": false
         }
       }
@@ -9665,6 +10995,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": null,
+          "correct": false
         }
       }
     },
@@ -9721,6 +11059,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": false
         }
@@ -9781,6 +11127,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -9837,6 +11191,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "B",
           "correct": false
         }
@@ -9897,6 +11259,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
+          "correct": true
         }
       }
     },
@@ -9954,6 +11324,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
           "correct": false
         }
       }
@@ -10013,6 +11391,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -10070,6 +11456,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
           "correct": false
         }
       }
@@ -10129,6 +11523,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -10187,6 +11589,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -10243,6 +11653,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -10303,6 +11721,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": false
         }
       }
     },
@@ -10360,6 +11786,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
           "correct": false
         }
       }
@@ -10419,6 +11853,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": true
         }
       }
     },
@@ -10476,6 +11918,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "B",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
           "correct": false
         }
       }
@@ -10535,6 +11985,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "A",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "D",
+          "correct": true
         }
       }
     },
@@ -10593,6 +12051,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -10651,6 +12117,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": true
         }
       }
     },
@@ -10709,6 +12183,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -10765,6 +12247,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -10825,6 +12315,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "D",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -10882,6 +12380,14 @@ const DETAIL_DATA = {
         },
         "gpt53_f": {
           "predicted": "A",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "B",
           "correct": false
         }
       }
@@ -10941,6 +12447,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -10997,6 +12511,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": true
         }
@@ -11057,6 +12579,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -11115,6 +12645,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": false
         }
       }
     },
@@ -11171,6 +12709,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "D",
           "correct": false
         }
@@ -11231,6 +12777,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "D",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": true
         }
       }
     },
@@ -11287,6 +12841,14 @@ const DETAIL_DATA = {
           "correct": false
         },
         "gpt53_f": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
           "predicted": "C",
           "correct": false
         }
@@ -11347,6 +12909,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "B",
           "correct": false
+        },
+        "dsv3": {
+          "predicted": "C",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "A",
+          "correct": false
         }
       }
     },
@@ -11405,6 +12975,14 @@ const DETAIL_DATA = {
         "gpt53_f": {
           "predicted": "C",
           "correct": true
+        },
+        "dsv3": {
+          "predicted": "B",
+          "correct": false
+        },
+        "dsr1": {
+          "predicted": "C",
+          "correct": true
         }
       }
     },
@@ -11461,6 +13039,14 @@ const DETAIL_DATA = {
           "correct": true
         },
         "gpt53_f": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsv3": {
+          "predicted": "A",
+          "correct": true
+        },
+        "dsr1": {
           "predicted": "A",
           "correct": true
         }
